@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+    <display-name>demo</display-name>
+    <welcome-file-list>
+        <welcome-file>/index</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>premiereServlet</servlet-name>
+        <servlet-class>fr.eni.ecole.servlets.Premiere</servlet-class>
+        <init-param>
+            <param-name>namespace</param-name>
+            <param-value></param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>premierServlet</servlet-name>
+        <servlet-class>fr.eni.ecole.servlets.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>premierServlet</servlet-name>
+        <url-pattern>/premiere</url-pattern>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>testIndirect</servlet-name>
+        <jsp-file>/WEB-INF/testIndirect.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>testIndirect</servlet-name>
+        <url-pattern>/testIndirect</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Formateur</servlet-name>
+        <jsp-file>/WEB-INF/connSucces.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Formateur</servlet-name>
+        <url-pattern>/formateur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Erreur</servlet-name>
+        <jsp-file>/WEB-INF/ErrorPages.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Erreur</servlet-name>
+        <url-pattern>/erreur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <jsp-file>/WEB-INF/index.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IdentificationAnimateur</servlet-name>
+        <jsp-file>/WEB-INF/identificationAnim.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IdentificationAnimateur</servlet-name>
+        <url-pattern>/identificationAnimateur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IdentificationStagiaire</servlet-name>
+        <jsp-file>/WEB-INF/identificationStag.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IdentificationStagiaire</servlet-name>
+        <url-pattern>/identificationStagiaire</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminPage</servlet-name>
+        <jsp-file>/WEB-INF/adminPage.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminPage</servlet-name>
+        <url-pattern>/adminPage</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>10</session-timeout>
+    </session-config>
+</web-app>

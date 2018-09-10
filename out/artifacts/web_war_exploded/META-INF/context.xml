@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Context>
+    <Resource name="jdbc/pool_cnx"
+              type="javax.sql.DataSource"
+              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              url="jdbc:sqlserver://127.0.0.1;database=TPJavaEE_GestionFormations"
+              username="sa"
+              password="Pa$$w0rd"
+              maxTotal="50"
+              maxIdle="10"
+              maxWaitMillis="10000"
+    >
+
+    </Resource>
+</Context>
