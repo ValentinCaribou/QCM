@@ -6,443 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="Code qui marche POPOPOPOPOPOPO !!!!!!">
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.babelrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.github/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.github/ISSUE_TEMPLATE/bug.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.github/ISSUE_TEMPLATE/feature.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.github/SUPPORT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.stylelintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.stylelintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/CNAME" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/breakpoints.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/browser-bugs.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/browser-features.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/colors.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/examples.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/grays.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/nav.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/theme-colors.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_data/translations.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/ads.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/bugify.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/callout-danger-async-methods.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/callout-info-mediaqueries-breakpoints.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/callout-warning-color-assistive-technologies.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/callout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/docs-navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/docs-sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/favicons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/bootstrap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/import.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/lightning.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/slack.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/icons/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/skippy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_includes/social.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_layouts/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_layouts/docs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_layouts/examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_layouts/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_layouts/redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/_layouts/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/brand/bootstrap-outline.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/brand/bootstrap-punchout.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/brand/bootstrap-social-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/brand/bootstrap-social.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/brand/bootstrap-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/css/docs.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/css/docs.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/bootstrap-stack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/bootstrap-themes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/mstile-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/mstile-310x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/mstile-310x310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/mstile-70x70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/img/favicons/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/docs.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/src/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/src/ie-emulation-modes-warning.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/src/pwa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/src/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/vendor/anchor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/vendor/clipboard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/vendor/holder.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/vendor/jquery-slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/js/vendor/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_ads.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_algolia.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_anchor.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_brand.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_browser-bugs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_callouts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_clipboard-js.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_component-examples.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_content.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_examples.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_masthead.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_skiplink.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_syntax.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/assets/scss/docs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/.htmllintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/change-version.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/gcp-key.json.enc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/generate-sri.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/lint-vars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/rollup.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/sauce_browsers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/saucelabs-unit-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/ship.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/upload-preview.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/vnu-jar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/workbox.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/build/workbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/about/brand.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/about/license.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/about/overview.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/about/translations.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/browser-bugs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/alerts.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/badge.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/breadcrumb.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/button-group.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/buttons.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/card.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/carousel.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/collapse.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/dropdowns.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/forms.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/input-group.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/jumbotron.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/list-group.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/modal.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/navbar.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/navs.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/pagination.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/popovers.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/progress.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/scrollspy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/components/tooltips.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/content/code.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/content/figures.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/content/images.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/content/reboot.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/content/tables.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/content/typography.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/.stylelintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/album/album.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/album/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/blog/blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/blog/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/carousel/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/carousel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/checkout/form-validation.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/checkout/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/cover/cover.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/cover/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/dashboard/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/dashboard/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/floating-labels/floating-labels.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/floating-labels/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/grid/grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/grid/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/jumbotron/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/jumbotron/jumbotron.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbar-bottom/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbar-fixed/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbar-fixed/navbar-top-fixed.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbar-static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbar-static/navbar-top.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbars/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/navbars/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/offcanvas/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/offcanvas/offcanvas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/offcanvas/offcanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/pricing/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/pricing/pricing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/product/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/product/product.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/album.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/blog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/carousel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/checkout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/floating-labels.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/jumbotron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/navbar-bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/navbar-fixed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/navbar-static.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/navbars.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/offcanvas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/pricing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/product.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/sign-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/starter-template.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/sticky-footer-navbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/screenshots/sticky-footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/sign-in/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/sign-in/signin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/starter-template/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/starter-template/starter-template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/sticky-footer-navbar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/sticky-footer/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/sticky-footer/sticky-footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/tooltip-viewport/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/tooltip-viewport/tooltip-viewport.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/examples/tooltip-viewport/tooltip-viewport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/extend/approach.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/extend/icons.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/extend/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/accessibility.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/best-practices.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/browsers-devices.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/build-tools.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/contents.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/download.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/introduction.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/javascript.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/theming.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/getting-started/webpack.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/layout/grid.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/layout/media-object.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/layout/overview.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/layout/utilities-for-layout.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/migration.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/borders.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/clearfix.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/close-icon.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/colors.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/display.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/embed.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/flex.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/float.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/image-replacement.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/position.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/screenreaders.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/shadows.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/sizing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/spacing.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/text.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/vertical-align.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/docs/4.1/utilities/visibility.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/alert.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/button.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/carousel.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/collapse.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/dropdown.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/index.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/modal.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/popover.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/scrollspy.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/tab.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/tooltip.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/dist/util.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/src/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/karma-bundle.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/unit/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/button.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/carousel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/collapse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/dropdown.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/modal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/popover.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/scrollspy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/js/tests/visual/tooltip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/nuget/MyGet.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/nuget/bootstrap.nuspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/nuget/bootstrap.sass.nuspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/package.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/sache.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_code.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_custom-forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_input-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_jumbotron.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_background-variant.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_border-radius.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_box-shadow.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_caret.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_gradients.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_grid-framework.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_hover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_image.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_lists.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_nav-divider.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_reset-text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_resize.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_size.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_table-row.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_text-emphasis.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_text-hide.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_text-truncate.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_transition.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/mixins/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_align.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_borders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_clearfix.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_display.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_embed.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_flex.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_float.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_position.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_screenreaders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_shadows.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_sizing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_spacing.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_text.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/scss/utilities/_visibility.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/sw.js" afterDir="false" />
+    <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -507,34 +77,8 @@
     <session id="459832657">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="7" />
-          <entry key="jsp" value="3" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="7" />
-          <entry key="JSP" value="3" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="21" />
-          <entry key="txt" value="38" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="21" />
-          <entry key="PLAIN_TEXT" value="38" />
         </counts>
       </usages-collector>
     </session>
@@ -542,64 +86,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/AccesJSPCachee.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/connSucces.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/ErrorPages.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-663">
-              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -614,19 +104,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="1105">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/adminPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="21" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/connSucces.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/filter/Filter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -691,10 +235,10 @@
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/adminPage.jsp" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/ErrorPages.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/connSucces.jsp" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java" />
-        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" />
       </list>
     </option>
   </component>
@@ -731,12 +275,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -814,9 +355,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -824,6 +365,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
     <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -971,24 +513,17 @@
       <workItem from="1531395697288" duration="1883000" />
       <workItem from="1531464945876" duration="37000" />
       <workItem from="1531465059526" duration="6511000" />
+      <workItem from="1536581151497" duration="334000" />
     </task>
-    <task id="LOCAL-00001" summary="Code qui marche POPOPOPOPOPOPO !!!!!!">
-      <created>1536579642867</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1536579642867</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117844000" />
+    <option name="totallyTimeSpent" value="114752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -998,14 +533,14 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33769062" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3373102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.31019524" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3286334" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3103082" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -1060,10 +595,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Code qui marche POPOPOPOPOPOPO !!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code qui marche POPOPOPOPOPOPO !!!!!!" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1170,6 +701,27 @@
     <entry file="file://$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/ErrorPage.jsp" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/liste_formation.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/liste_formation.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/AccesJSPCachee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1226,6 +778,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="98" column="31" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1233,31 +799,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/filter/Filter.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ErrorPages.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="510">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="323">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="1105">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
@@ -1275,66 +834,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ErrorPages.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="136">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/filter/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="306">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java">
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="442">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/AccesJSPCachee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-663">
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
         </state>
       </provider>
     </entry>
