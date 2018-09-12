@@ -41,14 +41,17 @@ public class Servlet extends HttpServlet {
 
         out.println("</h2>");
 
-        String url = "jdbc:sqlserver://localhost/TPJavaEE_GestionFormations";
+        String url = "jdbc:sqlserver://localhost/BDD_QCM";
         String utilisateur = "sa";
         String motDePasse = "Pa$$w0rd";
         Connection connexion = null;
 
         try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connexion = DriverManager.getConnection( url, utilisateur, motDePasse );
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

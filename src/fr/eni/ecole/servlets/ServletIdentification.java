@@ -42,7 +42,7 @@ public class ServletIdentification extends HttpServlet {
             String mail = (String) request.getParameter("mail");
             String password = (String) request.getParameter("password");
 
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT id, nom, prenom, email, motdepasse FROM animateurs WHERE email = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT idUtilisateur, nom, prenom, email, password, codeProfil, codePromo FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE email = ?");
             preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -62,7 +62,7 @@ public class ServletIdentification extends HttpServlet {
 
             while(resultSet.next()){
                 mailBdd = resultSet.getString("email");
-                passwordBdd = resultSet.getString("motdepasse");
+                passwordBdd = resultSet.getString("password");
                 nom = resultSet.getString("nom");
                 prenom = resultSet.getString("prenom");
                 String status = "Formateur";

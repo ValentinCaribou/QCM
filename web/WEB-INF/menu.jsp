@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <ol>
     <li><a href="${pageContext.request.contextPath}/index">Accueil</a></li>
-    <li><a href="${pageContext.request.contextPath}/listeFormation">Liste des formations</a></li>
+    <li><a href="${pageContext.request.contextPath}/listeFormation">Liste des QCM</a></li>
     <% if (session.getAttribute("status") == null){ %>
         <li><a href="${pageContext.request.contextPath}/identificationAnimateur">Accès animateur</a></li>
     <%} else {
