@@ -1,6 +1,6 @@
 package fr.eni.ecole.servlets;
 
-import fr.eni.ecole.Constantes.ConstantesSql;
+import fr.eni.ecole.constantes.ConstantesSql;
 import fr.eni.ecole.repo.User;
 
 import javax.naming.Context;
