@@ -6,11 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="Connexion Opérationnel">
+    <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="Modif connexion session">
+      <change afterPath="$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/connSucces.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/connSucces.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/Constantes/ConstantesSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentificationStagiaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/identificationStag.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +36,45 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TPJavaEE_GestionFormations" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TPJavaEE_GestionFormations" type="feb32156:DbDataSourceImpl" />
+        <item name="TPJavaEE_GestionFormations: database" type="bdf80c8a:MssqlImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TPJavaEE_GestionFormations" type="feb32156:DbDataSourceImpl" />
+        <item name="TPJavaEE_GestionFormations: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TPJavaEE_GestionFormations" type="feb32156:DbDataSourceImpl" />
+        <item name="TPJavaEE_GestionFormations: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TPJavaEE_GestionFormations" type="feb32156:DbDataSourceImpl" />
+        <item name="TPJavaEE_GestionFormations: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="animateurs: table" type="a00791b9:MssqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="TPJavaEE_GestionFormations" type="feb32156:DbDataSourceImpl" />
+        <item name="TPJavaEE_GestionFormations: database" type="bdf80c8a:MssqlImplModel$Database" />
+        <item name="dbo: schema" type="3adcb6a6:MssqlImplModel$Schema" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -45,17 +89,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="190" />
+          <entry key="java" value="382" />
           <entry key="jsp" value="4" />
-          <entry key="txt" value="27" />
+          <entry key="txt" value="51" />
           <entry key="xml" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="190" />
+          <entry key="JAVA" value="382" />
           <entry key="JSP" value="4" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="XML" value="26" />
         </counts>
       </usages-collector>
@@ -64,50 +108,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="13" />
-          <entry key="JSP" value="6" />
+          <entry key="JAVA" value="17" />
+          <entry key="JSP" value="7" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="13" />
-          <entry key="jsp" value="6" />
+          <entry key="java" value="17" />
+          <entry key="jsp" value="7" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
-    </session>
-    <session id="553534764">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="4" />
-          <entry key="jsp" value="2" />
-          <entry key="xml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="4" />
-          <entry key="JSP" value="2" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
           <entry key="git.branch.create.new" value="1" />
-          <entry key="git.branch.delete.local" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -115,19 +132,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state>
+              <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+              <folding>
+                <element signature="e#699#700#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#1347#1353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/adminPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="238">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="173" selection-start-line="4" selection-start-column="173" selection-end-line="4" selection-end-column="173" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/connSucces.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -135,17 +199,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="765">
+              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="323">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -157,8 +239,9 @@
       <list>
         <option value="CSS File" />
         <option value="Tag Library Descriptor" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -168,6 +251,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -219,6 +303,9 @@
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/connSucces.jsp" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/Constantes/ConstantesSql.java" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profile.java" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java" />
       </list>
     </option>
   </component>
@@ -258,27 +345,17 @@
     <option name="width" value="960" />
     <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
-  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
               <item name="QCM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QCM" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
@@ -290,6 +367,20 @@
               <item name="QCM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ecole" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QCM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ecole" type="462c0819:PsiDirectoryNode" />
+              <item name="constantes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QCM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ecole" type="462c0819:PsiDirectoryNode" />
+              <item name="enumRepo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QCM" type="b2602c69:ProjectViewProjectNode" />
@@ -350,12 +441,14 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536752662120" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536755270834" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sqljdbc4-3.0.jar!/" />
@@ -377,119 +470,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrateur\IdeaProjects\test\web\WEB-INF" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -624,7 +604,7 @@
       <workItem from="1531465059526" duration="6511000" />
       <workItem from="1536581151497" duration="4654000" />
       <workItem from="1536649737411" duration="9472000" />
-      <workItem from="1536736132200" duration="3726000" />
+      <workItem from="1536736132200" duration="4793000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1536582070688</created>
@@ -640,17 +620,31 @@
       <option name="project" value="LOCAL" />
       <updated>1536739031647</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modif connexion session">
+      <created>1536752612011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536752612011</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modif connexion session">
+      <created>1536752677383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536752677383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132308000" />
+    <option name="totallyTimeSpent" value="134426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.19722815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.14872068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -659,8 +653,8 @@
       <window_info id="Web" order="6" sideWeight="0.50217867" side_tool="true" weight="0.19936034" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3373102" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3373102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -726,7 +720,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Connexion Opérationnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connexion Opérationnel" />
+    <MESSAGE value="Modif connexion session" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modif connexion session" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -868,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/adminPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -896,12 +884,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/naming/Context.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/sql/DataSource.java" />
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentificationStagiaire.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="95" lean-forward="true" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/naming/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="307" column="18" selection-start-line="307" selection-start-column="18" selection-end-line="307" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -926,6 +926,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/filter/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -943,10 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="765">
+          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -959,50 +966,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="289">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="49" column="74" lean-forward="true" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/connSucces.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="323">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="68">
+          <caret line="4" column="173" selection-start-line="4" selection-start-column="173" selection-end-line="4" selection-end-column="173" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="614">
+          <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentificationStagiaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-406">
+          <caret line="31" column="95" lean-forward="true" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state>
+          <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
+          <folding>
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#1347#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/adminPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
