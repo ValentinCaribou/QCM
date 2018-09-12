@@ -2847,7 +2847,7 @@
    *
    * @static
    * @type {Array}
-   * @enum {String}
+   * @enumRepo {String}
    * @readonly
    * @method placements
    * @memberof Popper

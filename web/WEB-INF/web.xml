@@ -50,23 +50,13 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>IdentificationAnimateur</servlet-name>
-        <jsp-file>/WEB-INF/identificationAnim.jsp</jsp-file>
+        <servlet-name>identification</servlet-name>
+        <jsp-file>/WEB-INF/identification.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>IdentificationAnimateur</servlet-name>
-        <url-pattern>/identificationAnimateur</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>IdentificationStagiaire</servlet-name>
-        <jsp-file>/WEB-INF/identificationStag.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>IdentificationStagiaire</servlet-name>
-        <url-pattern>/identificationStagiaire</url-pattern>
+        <servlet-name>identification</servlet-name>
+        <url-pattern>/identificationS</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -77,6 +67,26 @@
     <servlet-mapping>
         <servlet-name>AdminPage</servlet-name>
         <url-pattern>/adminPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>createAccount</servlet-name>
+        <jsp-file>/WEB-INF/createAccount.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>createAccount</servlet-name>
+        <url-pattern>/createAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logs</servlet-name>
+        <jsp-file>/WEB-INF/logs.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logs</servlet-name>
+        <url-pattern>/logs</url-pattern>
     </servlet-mapping>
 
     <session-config>

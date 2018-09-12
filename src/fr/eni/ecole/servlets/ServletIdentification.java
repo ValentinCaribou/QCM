@@ -30,7 +30,7 @@ public class ServletIdentification extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
             Context context = new InitialContext();
-            DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
+            DataSource dataSource = (DataSource) context.lookup(ConstantesSql.connectionString);
             Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement();
 
@@ -43,7 +43,7 @@ public class ServletIdentification extends HttpServlet {
             String mail = (String) request.getParameter("mail");
             String password = (String) request.getParameter("password");
 
-            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.connexionQuery);
+            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.connectionQuery);
             preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
