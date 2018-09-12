@@ -1,5 +1,6 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.Constantes.ConstantesSql;
 import fr.eni.ecole.repo.User;
 
 import javax.naming.Context;
@@ -42,7 +43,7 @@ public class ServletIdentification extends HttpServlet {
             String mail = (String) request.getParameter("mail");
             String password = (String) request.getParameter("password");
 
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT idUtilisateur, nom, prenom, email, password, codeProfil, codePromo FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE email = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.connexionQuery);
             preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
