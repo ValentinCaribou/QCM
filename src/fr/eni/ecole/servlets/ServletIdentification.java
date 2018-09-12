@@ -1,6 +1,7 @@
 package fr.eni.ecole.servlets;
 
 import fr.eni.ecole.constantes.ConstantesSql;
+import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.User;
 
 import javax.naming.Context;
@@ -79,6 +80,34 @@ public class ServletIdentification extends HttpServlet {
 
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
+
+                for(Profil p : Profil.values()) {
+                    if(codeProfil == p.getCode()) {
+                        switch(p) {
+                            case CANDIDAT_LIBRE:
+                            case STAGIAIRE:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case RESPONSABLE:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case FORMATEUR:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case CELLULE_RECRUTEMENT:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case ADMIN:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+                        }
+                    }
+                }
+
                 this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
             }
 
@@ -91,9 +120,7 @@ public class ServletIdentification extends HttpServlet {
                     }
                 }
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (NamingException e) {
+        } catch (SQLException | NamingException e) {
             e.printStackTrace();
         }
     }
