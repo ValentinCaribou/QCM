@@ -1,5 +1,6 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.Constantes.ConstantesSql;
 import fr.eni.ecole.repo.User;
 
 import javax.naming.Context;
@@ -41,7 +42,7 @@ public class ServletIdentification extends HttpServlet {
             String mail = (String) request.getParameter("mail");
             String password = (String) request.getParameter("password");
 
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT idUtilisateur, nom, prenom, email, password, codeProfil, codePromo FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE email = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.connexionQuery);
             preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -64,6 +65,7 @@ public class ServletIdentification extends HttpServlet {
                 codePromo = resultSet.getString("codePromo");
                 codeProfil = resultSet.getInt("codeProfil");
                 String status = "Formateur";
+
                 if (session.getAttribute("mail") == null){
                     session.setAttribute("mail", mail);
                     session.setAttribute("password", password);
@@ -73,6 +75,7 @@ public class ServletIdentification extends HttpServlet {
                     session.setAttribute("codePromo", codePromo);
                 }
             }
+
 
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
@@ -88,7 +91,9 @@ public class ServletIdentification extends HttpServlet {
                     }
                 }
             }
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (NamingException e) {
             e.printStackTrace();
         }
     }
