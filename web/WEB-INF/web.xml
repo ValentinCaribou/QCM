@@ -10,26 +10,6 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>premiereServlet</servlet-name>
-        <servlet-class>fr.eni.ecole.servlets.Premiere</servlet-class>
-        <init-param>
-            <param-name>namespace</param-name>
-            <param-value></param-value>
-        </init-param>
-    </servlet>
-
-    <servlet>
-        <servlet-name>premierServlet</servlet-name>
-        <servlet-class>fr.eni.ecole.servlets.Servlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>premierServlet</servlet-name>
-        <url-pattern>/premiere</url-pattern>
-        <url-pattern>/first</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>testIndirect</servlet-name>
         <jsp-file>/WEB-INF/testIndirect.jsp</jsp-file>
     </servlet>
