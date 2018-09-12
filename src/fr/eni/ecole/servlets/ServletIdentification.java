@@ -53,6 +53,8 @@ public class ServletIdentification extends HttpServlet {
             String passwordBdd = null;
             String nom = null;
             String prenom = null;
+            String codePromo = null;
+            int codeProfil = 0;
 
             if (session.getAttribute("mail") == request.getParameter("mail")){
                 this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
@@ -65,6 +67,8 @@ public class ServletIdentification extends HttpServlet {
                 passwordBdd = resultSet.getString("password");
                 nom = resultSet.getString("nom");
                 prenom = resultSet.getString("prenom");
+                codePromo = resultSet.getString("codePromo");
+                codeProfil = resultSet.getInt("codeProfil");
                 String status = "Formateur";
                 System.out.println("Mail enregistrer en BDD : " + mailBdd);
                 System.out.println("Password enregistrer en BDD : " + passwordBdd);
@@ -73,10 +77,9 @@ public class ServletIdentification extends HttpServlet {
                     session.setAttribute("password", password);
                     session.setAttribute("nom", nom);
                     session.setAttribute("prenom", prenom);
-                    session.setAttribute("status", status);
-                    System.out.println("Session formateur créer !");
-                } else {
-
+                    session.setAttribute("codeProfil", codeProfil);
+                    session.setAttribute("codePromo", codePromo);
+                    System.out.println("Session créer !");
                 }
             }
 
