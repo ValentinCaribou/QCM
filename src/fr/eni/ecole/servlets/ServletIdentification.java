@@ -81,6 +81,7 @@ public class ServletIdentification extends HttpServlet {
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
 
+                // redirection
                 for(Profil p : Profil.values()) {
                     if(codeProfil == p.getCode()) {
                         switch(p) {
