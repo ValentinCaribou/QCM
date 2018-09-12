@@ -1,4 +1,4 @@
-package fr.eni.ecole.Constantes;
+package fr.eni.ecole.constantes;
 
 public class ConstantesSql {
 

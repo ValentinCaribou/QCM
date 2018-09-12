@@ -15,7 +15,7 @@
 <body>
 <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
-        <jsp:param name="title" value="TP Web - Connexion réussi" />
+        <jsp:param name="title" value="TP Web - Connexion reussi" />
     </jsp:include>
 </div>
 <div class="row2 bordure3">

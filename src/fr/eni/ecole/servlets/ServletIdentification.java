@@ -1,6 +1,7 @@
 package fr.eni.ecole.servlets;
 
-import fr.eni.ecole.Constantes.ConstantesSql;
+import fr.eni.ecole.constantes.ConstantesSql;
+import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.User;
 
 import javax.naming.Context;
@@ -27,7 +28,6 @@ public class ServletIdentification extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("test");
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
@@ -47,9 +47,6 @@ public class ServletIdentification extends HttpServlet {
             preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            System.out.println("Mail de la session : " + mail);
-            System.out.println("Password de la session : " + password);
-
             String mailBdd = null;
             String passwordBdd = null;
             String nom = null;
@@ -61,8 +58,6 @@ public class ServletIdentification extends HttpServlet {
                 this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
             }
 
-            System.out.println("Mail de la session : " + session.getAttribute("mail"));
-
             while(resultSet.next()){
                 mailBdd = resultSet.getString("email");
                 passwordBdd = resultSet.getString("password");
@@ -71,8 +66,7 @@ public class ServletIdentification extends HttpServlet {
                 codePromo = resultSet.getString("codePromo");
                 codeProfil = resultSet.getInt("codeProfil");
                 String status = "Formateur";
-                System.out.println("Mail enregistrer en BDD : " + mailBdd);
-                System.out.println("Password enregistrer en BDD : " + passwordBdd);
+
                 if (session.getAttribute("mail") == null){
                     session.setAttribute("mail", mail);
                     session.setAttribute("password", password);
@@ -80,13 +74,41 @@ public class ServletIdentification extends HttpServlet {
                     session.setAttribute("prenom", prenom);
                     session.setAttribute("codeProfil", codeProfil);
                     session.setAttribute("codePromo", codePromo);
-                    System.out.println("Session créer !");
                 }
             }
 
 
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
+
+                // redirection
+                for(Profil p : Profil.values()) {
+                    if(codeProfil == p.getCode()) {
+                        switch(p) {
+                            case CANDIDAT_LIBRE:
+                            case STAGIAIRE:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case RESPONSABLE:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case FORMATEUR:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case CELLULE_RECRUTEMENT:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case ADMIN:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+                        }
+                    }
+                }
+
                 this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
             }
 
@@ -99,9 +121,7 @@ public class ServletIdentification extends HttpServlet {
                     }
                 }
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (NamingException e) {
+        } catch (SQLException | NamingException e) {
             e.printStackTrace();
         }
     }

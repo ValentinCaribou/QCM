@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="BDD_QCM" uuid="72339ec6-67ac-41e5-ad99-77a8105c16f4">
-      <database-info product="Microsoft SQL Server" version="12.00.4100" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.0 for SQL Server" driver-version="7.0.0.0" family="MSSQL" exact-version="12.0.410">
-        <extra-name-characters>$#@</extra-name-characters>
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>sa</user-name>
-      <introspection-schemas>BDD_QCM:dbo</introspection-schemas>
+    <data-source name="TPJavaEE_GestionFormations" uuid="4065068f-7aa0-4c98-bac7-2db5e5b8642e">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MSSQL" exact-version="0.0" />
     </data-source>
   </component>
 </project>
