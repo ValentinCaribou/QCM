@@ -7,16 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="Modif connexion session">
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/connSucces.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/connSucces.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/Constantes/ConstantesSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentificationStagiaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/identificationStag.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/AccesJSPCachee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/testIndirect.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/AccesJSPCachee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/AccesJSPCachee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/testIndirect.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,88 +138,73 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="553534764">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+          <entry key="jsp" value="4" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
+          <entry key="JSP" value="4" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="5" />
+          <entry key="java" value="190" />
+          <entry key="jsp" value="85" />
+          <entry key="xml" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="190" />
+          <entry key="JSP" value="85" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="XML" value="19" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
-              <folding>
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#1347#1353#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/adminPage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+            <state relative-caret-position="342">
+              <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#315#316#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="291">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="173" selection-start-line="4" selection-start-column="173" selection-end-line="4" selection-end-column="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/connSucces.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
+        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -217,17 +212,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
+            <state relative-caret-position="170">
+              <caret line="10" column="90" lean-forward="true" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="49" column="74" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
+            <state relative-caret-position="459">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="101" lean-forward="true" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -255,7 +259,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="admin" />
       </map>
     </option>
   </component>
@@ -278,7 +282,6 @@
         <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIndentification.java" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/repo/User.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/header.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/identification.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/identification.jsp" />
@@ -297,15 +300,18 @@
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/adminPage.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/ErrorPages.jsp" />
-        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/connSucces.jsp" />
-        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/Constantes/ConstantesSql.java" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profile.java" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/menu.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/login.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/header.jsp" />
+        <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogin.java" />
       </list>
     </option>
   </component>
@@ -344,6 +350,9 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="960" />
     <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -440,15 +449,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536755270834" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536840895415" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sqljdbc4-3.0.jar!/" />
@@ -456,7 +465,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -506,6 +515,7 @@
     </configuration>
     <configuration name="Tomcat 8.5.32" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="web:war exploded">
           <settings>
@@ -638,13 +648,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134426000" />
+    <option name="totallyTimeSpent" value="141444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.14872068" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -654,18 +664,18 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3373102" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3373102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3103082" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.31019524" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286334" />
-      <window_info anchor="bottom" id="Messages" order="9" />
-      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32897604" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -817,24 +827,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://4065068f-7aa0-4c98-bac7-2db5e5b8642e/database/TPJavaEE_GestionFormations/schema/dbo/table/animateurs">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://4065068f-7aa0-4c98-bac7-2db5e5b8642e/database/TPJavaEE_GestionFormations/schema/dbo/table/animateurs" />
     <entry file="file://$PROJECT_DIR$/web/header.jsp" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/ErrorPage.jsp" />
     <entry file="file://$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/liste_formation.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/liste_formation.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationStag.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationStag.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/testIndirect.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -863,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -884,27 +875,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/naming/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="307" column="18" selection-start-line="307" selection-start-column="18" selection-end-line="307" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/naming/Context.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/sql/DataSource.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/repo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -912,24 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -950,27 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="63" column="72" selection-start-line="63" selection-start-column="72" selection-end-line="63" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/connSucces.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -987,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="173" selection-start-line="4" selection-start-column="173" selection-end-line="4" selection-end-column="173" />
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -999,25 +936,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentificationStagiaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="31" column="95" lean-forward="true" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="42" column="64" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
-          <folding>
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#1347#1353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentificationStagiaire.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/adminPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -1027,14 +946,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/enumRepo/Profil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="153">
           <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="101" lean-forward="true" selection-start-line="22" selection-start-column="101" selection-end-line="22" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="90" lean-forward="true" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Deconnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>
