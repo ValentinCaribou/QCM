@@ -56,37 +56,17 @@
 
     <servlet-mapping>
         <servlet-name>identification</servlet-name>
-        <url-pattern>/identificationS</url-pattern>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>AdminPage</servlet-name>
-        <jsp-file>/WEB-INF/adminPage.jsp</jsp-file>
+        <servlet-name>Admin</servlet-name>
+        <jsp-file>/WEB-INF/indexAdmin.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>AdminPage</servlet-name>
-        <url-pattern>/adminPage</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>createAccount</servlet-name>
-        <jsp-file>/WEB-INF/createAccount.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>createAccount</servlet-name>
-        <url-pattern>/createAccount</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>logs</servlet-name>
-        <jsp-file>/WEB-INF/logs.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>logs</servlet-name>
-        <url-pattern>/logs</url-pattern>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
     </servlet-mapping>
 
     <session-config>

@@ -50,6 +50,16 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>identification</servlet-name>
+        <jsp-file>/WEB-INF/identification.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>identification</servlet-name>
+        <url-pattern>/identificationS</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>AdminPage</servlet-name>
         <jsp-file>/WEB-INF/adminPage.jsp</jsp-file>
     </servlet>

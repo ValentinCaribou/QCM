@@ -6,30 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="Mapping inutile">
-      <change afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogs.java" afterDir="false" />
+    <list default="true" id="7de3aa2d-a18f-4153-ae93-82bc56f44654" name="Default" comment="Menu et nouvelles pages pour la section admin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletFormationModif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/fr/eni/ecole/servlets/ServletIdentificationStagiaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/identificationStag.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/adminPage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/identificationAnim.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/web_war_exploded/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/ressources/bootstrap-4.1.1/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/Servlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletFormationModif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentification.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/fr/eni/ecole/servlets/ServletIdentificationStagiaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/adminPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/indexAdmin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/identificationAnim.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/identification.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/menu_admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/menuAdmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/indexAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/indexAdmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/menuAdmin.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -113,44 +97,51 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="10" />
-          <entry key="jsp" value="2" />
+          <entry key="jsp" value="3" />
           <entry key="xhtml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="10" />
-          <entry key="JSP" value="2" />
+          <entry key="JSP" value="3" />
           <entry key="XHTML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="430" />
-          <entry key="jsp" value="89" />
-          <entry key="txt" value="20" />
+          <entry key="jsp" value="117" />
+          <entry key="txt" value="84" />
           <entry key="xhtml" value="1" />
-          <entry key="xml" value="34" />
+          <entry key="xml" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="430" />
-          <entry key="JSP" value="89" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="JSP" value="117" />
+          <entry key="PLAIN_TEXT" value="84" />
           <entry key="XHTML" value="1" />
-          <entry key="XML" value="34" />
+          <entry key="XML" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="76" column="21" lean-forward="true" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+            <state relative-caret-position="223">
+              <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -159,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -168,16 +159,7 @@
         <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -186,30 +168,29 @@
         <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="32" column="96" lean-forward="true" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
+              <caret line="32" column="96" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
               <folding>
                 <element signature="e#736#737#0" expanded="true" />
                 <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#1348#1354#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/indexAdmin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+            <state relative-caret-position="374">
+              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/menuAdmin.jsp">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -218,7 +199,7 @@
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -303,6 +284,7 @@
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletLogs.java" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletAdmin.java" />
         <option value="$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/indexAdmin.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
     </option>
@@ -351,8 +333,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -404,13 +384,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536762680563" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536762794583" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="SQL Server (Microsoft)" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sqljdbc4-3.0.jar!/" />
@@ -468,6 +450,7 @@
     </configuration>
     <configuration name="Tomcat 8.5.32" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="web:war exploded">
           <settings>
@@ -567,6 +550,7 @@
       <workItem from="1536581151497" duration="4654000" />
       <workItem from="1536649737411" duration="9472000" />
       <workItem from="1536736132200" duration="4793000" />
+      <workItem from="1536822776502" duration="1782000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1536582070688</created>
@@ -603,17 +587,24 @@
       <option name="project" value="LOCAL" />
       <updated>1536757454453</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Menu et nouvelles pages pour la section admin">
+      <created>1536762782607</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536762782607</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139326000" />
+    <option name="totallyTimeSpent" value="141825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.19722815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.19936034" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -691,7 +682,8 @@
     <MESSAGE value="Connexion Opérationnel" />
     <MESSAGE value="Modif connexion session" />
     <MESSAGE value="Mapping inutile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapping inutile" />
+    <MESSAGE value="Menu et nouvelles pages pour la section admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu et nouvelles pages pour la section admin" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -910,63 +902,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menuAdmin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/bdd/DbConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/bdd/DbConnect.java" />
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java" />
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java" />
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/constantes/ConstantesSql.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Servlet.java">
+    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/Premiere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletFormationModif.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="221">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -977,36 +927,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="76" column="21" lean-forward="true" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fr/eni/ecole/servlets/ServletIdentification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="32" column="96" lean-forward="true" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
+          <caret line="32" column="96" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
           <folding>
             <element signature="e#736#737#0" expanded="true" />
             <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#1348#1354#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/menuAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/indexAdmin.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+        <state relative-caret-position="374">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>
     </entry>
