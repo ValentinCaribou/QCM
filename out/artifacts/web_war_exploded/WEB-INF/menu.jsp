@@ -9,4 +9,10 @@
 <ol>
     <li><a href="${pageContext.request.contextPath}/index">Accueil</a></li>
     <li><a href="${pageContext.request.contextPath}/listeFormation">Liste des QCM</a></li>
+    <li>
+        <form>
+            <input type="text" placeholder="Votre recherche"><br>
+            <input type="submit" value="Rechercher">
+        </form>
+    </li>
 </ol>

@@ -15,8 +15,8 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-@WebServlet(name = "ServletIdentification", urlPatterns = "/identificationUser")
-public class ServletIdentification extends HttpServlet {
+@WebServlet(name = "ServletLogin", urlPatterns = "/authentification")
+public class ServletLogin extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();
@@ -28,6 +28,11 @@ public class ServletIdentification extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if(request.getParameter("value") != null) {
+            this.doGet(request, response);
+            return;
+        }
+
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup(ConstantesSql.connectionString);
@@ -55,7 +60,7 @@ public class ServletIdentification extends HttpServlet {
             int codeProfil = 0;
 
             if (session.getAttribute("mail") == request.getParameter("mail")){
-                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                this.getServletContext().getRequestDispatcher("/index").forward(request, response);
             }
 
             while(resultSet.next()){
@@ -77,49 +82,40 @@ public class ServletIdentification extends HttpServlet {
                 }
             }
 
-
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
 
                 // redirection
                 for(Profil p : Profil.values()) {
                     if(codeProfil == p.getCode()) {
+                        System.out.println(codeProfil);
                         switch(p) {
                             case CANDIDAT_LIBRE:
                             case STAGIAIRE:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
                             case RESPONSABLE:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
                             case FORMATEUR:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
                             case CELLULE_RECRUTEMENT:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
                             case ADMIN:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
                         }
+                        return;
                     }
                 }
 
-                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
-            }
-
-            String infos = null;
-            if (cookies != null) {
-                for (Cookie c : cookies) {
-                    if (c.getName().equals("Bonjour")) {
-                        infos = c.getValue();
-                        break;
-                    }
-                }
+                response.sendRedirect("/index");
             }
         } catch (SQLException | NamingException e) {
             e.printStackTrace();

@@ -21,6 +21,15 @@
         <form method="post" action="${pageContext.request.contextPath}/deconnexion">
             <input class="btn" type="submit" value="Deconnection">
         </form>
-        <%   }%>
+        <%
+           }
+           else {
+        %>
+        <form method="post" action="${pageContext.request.contextPath}/login">
+            <input class="btn" type="submit" value="Login">
+        </form>
+        <%
+           }
+        %>
     </div>
 </div>

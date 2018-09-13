@@ -10,36 +10,6 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>testIndirect</servlet-name>
-        <jsp-file>/WEB-INF/testIndirect.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>testIndirect</servlet-name>
-        <url-pattern>/testIndirect</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Formateur</servlet-name>
-        <jsp-file>/WEB-INF/connSucces.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Formateur</servlet-name>
-        <url-pattern>/formateur</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Erreur</servlet-name>
-        <jsp-file>/WEB-INF/ErrorPages.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Erreur</servlet-name>
-        <url-pattern>/erreur</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>Index</servlet-name>
         <jsp-file>/WEB-INF/index.jsp</jsp-file>
     </servlet>
@@ -50,23 +20,13 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>identification</servlet-name>
-        <jsp-file>/WEB-INF/identification.jsp</jsp-file>
+        <servlet-name>Login</servlet-name>
+        <jsp-file>/WEB-INF/login.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>identification</servlet-name>
+        <servlet-name>Login</servlet-name>
         <url-pattern>/login</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>Admin</servlet-name>
-        <jsp-file>/WEB-INF/indexAdmin.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Admin</servlet-name>
-        <url-pattern>/admin</url-pattern>
     </servlet-mapping>
 
     <session-config>

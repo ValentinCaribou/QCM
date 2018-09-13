@@ -19,11 +19,11 @@ public class Deconnexion extends HttpServlet {
         HttpSession session = request.getSession();
         request.getParameter("mail");
         if(session.getAttribute("mail") == null){
-            this.getServletContext().getRequestDispatcher("/index").forward(request, response);
+            response.sendRedirect("/index");
         } else {
             session.getAttribute("mail");
             session.invalidate();
-            this.getServletContext().getRequestDispatcher("/index").forward(request, response);
+            response.sendRedirect("/index");
         }
     }
 }
