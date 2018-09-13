@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="BDD_QCM" uuid="72339ec6-67ac-41e5-ad99-77a8105c16f4">
+    <data-source source="LOCAL" name="BDD_QCM" uuid="4373c4de-19c5-4d35-870b-17e7880dbe9b">
       <driver-ref>sqlserver.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://localhost;database=BDD_QCM</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://localhost</jdbc-url>
       <driver-properties>
         <property name="applicationName" value="DataGrip" />
       </driver-properties>
