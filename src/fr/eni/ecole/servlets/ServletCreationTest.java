@@ -14,6 +14,6 @@ public class ServletCreationTest extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher("/WEB-INF/creationTest.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/tests").forward(request, response);
     }
 }

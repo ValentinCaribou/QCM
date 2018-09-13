@@ -23,6 +23,6 @@ public class ServletIndexFormateur extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-            this.getServletContext().getRequestDispatcher("/WEB-INF/indexFormateur.jsp").forward(request, response);
+            this.getServletContext().getRequestDispatcher("/formateurs").forward(request, response);
     }
 }

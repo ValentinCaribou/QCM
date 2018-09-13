@@ -40,16 +40,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>Formateur</servlet-name>
-        <jsp-file>/WEB-INF/connSucces.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>Formateur</servlet-name>
-        <url-pattern>/formateur</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>Erreur</servlet-name>
         <jsp-file>/WEB-INF/ErrorPages.jsp</jsp-file>
     </servlet>
@@ -98,6 +88,46 @@
         <servlet-name>AdminPage</servlet-name>
         <url-pattern>/adminPage</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>formateur</servlet-name>
+        <url-pattern>/formateurs</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>formateur</servlet-name>
+        <jsp-file>/WEB-INF/indexFormateur.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>question</servlet-name>
+        <url-pattern>/questions</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>question</servlet-name>
+        <jsp-file>/WEB-INF/creationQuestion.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>theme</servlet-name>
+        <url-pattern>/themes</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>theme</servlet-name>
+        <jsp-file>/WEB-INF/creationTheme.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/tests</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <jsp-file>/WEB-INF/creationTest.jsp</jsp-file>
+    </servlet>
 
     <session-config>
         <session-timeout>10</session-timeout>

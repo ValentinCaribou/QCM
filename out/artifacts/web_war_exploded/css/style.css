@@ -1,6 +1,13 @@
 li{
     list-style: none;
 }
+.menuFormateurLien{
+    text-decoration: none;
+}
+
+.creationThemeDivFormulaireCreation{
+    padding-top: 50px;
+}
 
 .bordure {
     border-bottom: 3px solid #336666;
@@ -63,4 +70,5 @@ div {
 .texteColor {
     color: #336666;
 }
+
 

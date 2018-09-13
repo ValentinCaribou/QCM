@@ -5,6 +5,10 @@ li{
     text-decoration: none;
 }
 
+.creationThemeDivFormulaireCreation{
+    padding-top: 50px;
+}
+
 .bordure {
     border-bottom: 3px solid #336666;
     width: 100%;

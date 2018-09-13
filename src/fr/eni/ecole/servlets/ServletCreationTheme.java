@@ -1,5 +1,7 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.repo.Theme;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,10 +22,17 @@ public class ServletCreationTheme extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String theme = request.getParameter("theme");
 
+        request.setAttribute("theme", theme);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher("/WEB-INF/creationTheme.jsp").forward(request, response);
+        Theme theme = new Theme();
+
+
+        this.getServletContext().getRequestDispatcher("/themes").forward(request, response);
+
+
     }
 }
