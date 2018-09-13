@@ -1,6 +1,9 @@
 li{
     list-style: none;
 }
+.menuFormateurLien{
+    text-decoration: none;
+}
 
 .bordure {
     border-bottom: 3px solid #336666;
@@ -63,4 +66,5 @@ div {
 .texteColor {
     color: #336666;
 }
+
 
