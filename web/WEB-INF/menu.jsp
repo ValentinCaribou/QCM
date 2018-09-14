@@ -9,17 +9,6 @@
 <ol>
     <li><a href="${pageContext.request.contextPath}/index">Accueil</a></li>
     <li><a href="${pageContext.request.contextPath}/listeFormation">Liste des QCM</a></li>
-    <% if (session.getAttribute("status") == null){ %>
-        <li><a href="${pageContext.request.contextPath}/identificationAnimateur">Accès animateur</a></li>
-    <%} else {
-        if(session.getAttribute("status").equals("Formateur")){ %>
-            <li><a href="${pageContext.request.contextPath}/listeFormationModif">Accès animateur</a></li>
-        <%}
-        if (session.getAttribute("status").equals("Stagiaire")) { %>
-            <li><a href="${pageContext.request.contextPath}/erreur">Accès animateur</a></li>
-        <%}%>
-    <%}%>
-    <li><a href="${pageContext.request.contextPath}/identificationStagiaire" >Accès stagiaire</a></li>
     <li>
         <form>
             <input type="text" placeholder="Votre recherche"><br>
