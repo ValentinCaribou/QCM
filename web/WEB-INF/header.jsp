@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="bordure">
     <div class="col-lg-10">
-        <h1 class="text"><%=request.getParameter("title") != null ? request.getParameter("title") : "TP Web"%></h1>
+        <h1 class="text"><%=request.getParameter("title") != null ? request.getParameter("title") : "QCM"%></h1>
     </div>
     <%
         String nom = (String) session.getAttribute("nom");
@@ -21,6 +21,15 @@
         <form method="post" action="${pageContext.request.contextPath}/deconnexion">
             <input class="btn" type="submit" value="Deconnection">
         </form>
-        <%   }%>
+        <%
+           }
+           else {
+        %>
+        <form method="post" action="${pageContext.request.contextPath}/login">
+            <input class="btn" type="submit" value="Login">
+        </form>
+        <%
+           }
+        %>
     </div>
 </div>

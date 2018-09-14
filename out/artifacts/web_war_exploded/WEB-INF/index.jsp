@@ -2,14 +2,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>TP Web - Accueil</title>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../ressources/bootstrap-4.1.1/dist/css/bootstrap.min.css"/>
+      <jsp:include page="/WEB-INF/head.jsp">
+          <jsp:param name="title" value="QCM - Accueil" />
+      </jsp:include>
   </head>
   <body>
   <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
-      <jsp:param name="title" value="TP Web - Accueil" />
+      <jsp:param name="title" value="QCM - Accueil" />
     </jsp:include>
     <div class="row2 bordure3">
       <div class="col-lg-10">
