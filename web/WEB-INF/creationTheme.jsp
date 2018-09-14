@@ -1,4 +1,5 @@
-<%--
+<%@ page import="fr.eni.ecole.repo.Theme" %>
+<%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 13/09/2018
@@ -28,13 +29,22 @@
                     <button type="submit" class="btn btn-outline-primary">Valider</button>
                 </div>
             </form>
+            <table class="table texteColor">
+                <% ArrayList<Theme> listThemes = (ArrayList<Theme>) request.getAttribute("theme");%>
+                <% for(Theme listTheme : listThemes){
+                %>
+                <tr>
+                    <td><%=listTheme.getLibelle()%></td>
+                    <td><button type="submit" class="btn btn-outline-warning">Modifier</button></td>
+                    <td><button type="submit" class="btn btn-outline-danger">Supprimer</button></td>
+                </tr>
+                <%
+                    }
+                %>
+            </table>
         </div>
         <div class="col-lg-2 ">
             <%@include file="menuFormateur.jsp"%>
-        </div>
-
-        <div class="row">
-
         </div>
     </div>
 </div>

@@ -43,23 +43,21 @@ public class ServletCreationTheme extends HttpServlet {
             Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement();
 
-            ArrayList<Theme> listTheme = new ArrayList<Theme>();
+            ArrayList<Theme> listThemes = new ArrayList<Theme>();
 
-            String libelle = (String) request.getParameter("libelle");
             PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.themeQuery);
-            preparedStatement.setString(1, libelle);
             ResultSet resultSet = preparedStatement.executeQuery();
 
 
 
             while(resultSet.next()) {
                 String libelleBdd = resultSet.getString("libelle");
-                Theme theme = new Theme();
-                theme.setLibelle("libelleBdd");
-
-                listTheme.add(theme);
-
+                Theme theme = new Theme(libelleBdd);
+                listThemes.add(theme);
             }
+
+            request.setAttribute( "theme", listThemes );
+            this.getServletContext().getRequestDispatcher( "/WEB-INF/creationTheme.jsp" ).forward( request, response );
 
         }
         catch (SQLException | NamingException e) {

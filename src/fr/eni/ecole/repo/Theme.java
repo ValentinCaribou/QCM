@@ -9,8 +9,8 @@ public class Theme {
         this.libelle = libelle;
     }
 
-    public Theme (){
-
+    public Theme( String libelle) {
+        this.libelle = libelle;
     }
 
     public int getId() {
