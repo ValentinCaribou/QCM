@@ -1,6 +1,5 @@
 package fr.eni.ecole.servlets;
 
-import fr.eni.ecole.constantes.ConstantesSql;
 import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.User;
 
@@ -14,6 +13,8 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
+
+import static fr.eni.ecole.constantes.ConstantesSql.connectionQuery;
 
 @WebServlet(name = "ServletLogin", urlPatterns = "/authentification")
 public class ServletLogin extends HttpServlet {
@@ -35,7 +36,9 @@ public class ServletLogin extends HttpServlet {
 
         try {
             Context context = new InitialContext();
-            DataSource dataSource = (DataSource) context.lookup(ConstantesSql.connectionString);
+
+            DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
+
             Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement();
 
@@ -48,8 +51,8 @@ public class ServletLogin extends HttpServlet {
             String mail = (String) request.getParameter("mail");
             String password = (String) request.getParameter("password");
 
-            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.connectionQuery);
-            preparedStatement.setString(1, mail);
+            PreparedStatement preparedStatement = connection.prepareStatement(connectionQuery);
+
             ResultSet resultSet = preparedStatement.executeQuery();
 
             String mailBdd = null;
