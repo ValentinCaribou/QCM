@@ -1,5 +1,8 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
+import fr.eni.ecole.repo.FormRespDto;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -11,7 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
+import static fr.eni.ecole.constantes.ConstantesSql.getFormRespQuery;
 
 @WebServlet(name = "ServletAdmin", urlPatterns = "/admin")
 public class ServletAdmin extends HttpServlet {
@@ -24,10 +32,31 @@ public class ServletAdmin extends HttpServlet {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
             Connection connection = dataSource.getConnection();
+
+            PreparedStatement preparedStatement = connection.prepareStatement(getFormRespQuery);
+            preparedStatement.setInt(1, Profil.RESPONSABLE.getCode());
+            preparedStatement.setInt(2, Profil.FORMATEUR.getCode());
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            ArrayList<FormRespDto> utilisateurs = new ArrayList<>();
+            while(resultSet.next()) {
+                utilisateurs.add(
+                        new FormRespDto(
+                                resultSet.getInt("idUtilisateur"),
+                                resultSet.getString("nom"),
+                                resultSet.getString("prenom"),
+                                resultSet.getString("email"),
+                                resultSet.getString("password"),
+                                resultSet.getString("profil")
+                        )
+                );
+            }
+
+            request.setAttribute("users", utilisateurs);
+
+            this.getServletContext().getRequestDispatcher("/adminPage").forward(request, response);
         } catch (NamingException | SQLException e) {
             e.printStackTrace();
         }
-
-        this.getServletContext().getRequestDispatcher("/inscriptionCandidat").forward(request, response);
     }
 }

@@ -68,9 +68,9 @@ public class InscriptionCandidat extends HttpServlet {
 
             ArrayList<Utilisateur> listeUtilisateur = new ArrayList<Utilisateur>();
 
-            PreparedStatement preparedStatement = connection.prepareStatement(getCandidatQuery);
+            PreparedStatement preparedStatement = connection.prepareStatement(getCandidatStagiaireQuery);
             preparedStatement.setInt(1, Profil.CANDIDAT_LIBRE.getCode());
-            preparedStatement.setInt(1, Profil.STAGIAIRE.getCode());
+            preparedStatement.setInt(2, Profil.STAGIAIRE.getCode());
             ResultSet resultSetCandidat = preparedStatement.executeQuery();
             while (resultSetCandidat.next()){
 

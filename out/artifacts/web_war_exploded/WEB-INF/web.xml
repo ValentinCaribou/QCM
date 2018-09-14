@@ -10,16 +10,6 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>testIndirect</servlet-name>
-        <jsp-file>/WEB-INF/testIndirect.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>testIndirect</servlet-name>
-        <url-pattern>/testIndirect</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>Formateur</servlet-name>
         <jsp-file>/WEB-INF/connSucces.jsp</jsp-file>
     </servlet>
@@ -69,37 +59,6 @@
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
 
-
-    <servlet>
-        <servlet-name>IdentificationAnimateur</servlet-name>
-        <jsp-file>/WEB-INF/identificationAnim.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>IdentificationAnimateur</servlet-name>
-        <url-pattern>/identificationAnimateur</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>IdentificationStagiaire</servlet-name>
-        <jsp-file>/WEB-INF/identificationStag.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>IdentificationStagiaire</servlet-name>
-        <url-pattern>/identificationStagiaire</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>AdminPage</servlet-name>
-        <jsp-file>/WEB-INF/adminPage.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>AdminPage</servlet-name>
-        <url-pattern>/adminPage</url-pattern>
-    </servlet-mapping>
-
     <servlet>
         <servlet-name>Login</servlet-name>
         <jsp-file>/WEB-INF/login.jsp</jsp-file>
@@ -110,6 +69,25 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <jsp-file>/WEB-INF/indexAdmin.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/adminPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateRespFormAccount</servlet-name>
+        <jsp-file>/WEB-INF/indexAdmin.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreateRespFormAccount</servlet-name>
+        <url-pattern>/adminPage/create</url-pattern>
+    </servlet-mapping>
 
     <session-config>
         <session-timeout>10</session-timeout>
