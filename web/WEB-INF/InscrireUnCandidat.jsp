@@ -12,11 +12,9 @@
 <%-- Created by IntelliJ IDEA. --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>TP Web - Accueil</title>
-    <link rel="stylesheet" href="../css/style.css"/>
-    <link rel="stylesheet" href="../ressources/bootstrap-4.1.1/dist/css/bootstrap.min.css"/>
-</head>
+<jsp:include page="/WEB-INF/head.jsp">
+    <jsp:param name="title" value="Inscrire un candidat / Stagiaire" />
+</jsp:include>
 <body>
 <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
@@ -29,7 +27,7 @@
             <br>
                 <div class="col-lg-6">
                     <h6 for="listeUtilisateur">Liste des candidat :</h6>
-                    <select class="form-control" id="listeUtilisateur" name="Candidat">
+                    <select class="form-control" id="listeUtilisateur" name="Utilisateur">
                         <% ArrayList<Utilisateur> listeUtilisateurs = (ArrayList<Utilisateur>) request.getAttribute("listeUtilisateur");%>
                         <% for(Utilisateur listeUtilisateur : listeUtilisateurs){
                         %>
@@ -52,8 +50,18 @@
                         %>
                     </select>
                 </div>
+                </br>
+                <div class="col-lg-6">
+                <h6>Choisir la date de début : </h6>
+                </br>
+                    <input type="date" name="dateDebut">
+                </br>
+                <h6>Choisir la date de fin : </h6>
+                </br>
+                    <input class="dateTime" type="date" name="dateFin">
             </br>
                 <input type="submit" class="btn btn-form-candidat" value="Valider">
+            </div>
             </form>
         </div>
         <div class="col-lg-2 bordure2">

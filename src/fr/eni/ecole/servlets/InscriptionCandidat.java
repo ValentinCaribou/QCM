@@ -26,7 +26,6 @@ public class InscriptionCandidat extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            System.out.println("test");
             Context context = new InitialContext();
             DataSource dataSource = (DataSource)context.lookup("java:comp/env/jdbc/pool_cnx");
 

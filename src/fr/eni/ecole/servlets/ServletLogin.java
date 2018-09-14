@@ -17,8 +17,8 @@ import java.util.ArrayList;
 
 import static fr.eni.ecole.enumRepo.Profil.CANDIDAT_LIBRE;
 
-@WebServlet(name = "ServletIdentification", urlPatterns = "/identificationUser")
-public class ServletIdentification extends HttpServlet {
+@WebServlet(name = "ServletLogin", urlPatterns = "/authentification")
+public class ServletLogin extends HttpServlet {
     @Override
     public void init() throws ServletException {
         super.init();

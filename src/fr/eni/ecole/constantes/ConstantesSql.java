@@ -19,4 +19,23 @@ public class ConstantesSql {
             "      ,[seuil_haut]" +
             "      ,[seuil_bas]" +
             "  FROM [BDD_QCM].[dbo].[TEST]";
+
+    public static final String insertInscription = "INSERT INTO [BDD_QCM].[dbo].[EPREUVE]" +
+            "           ([dateDedutValidite]" +
+            "           ,[dateFinValidite]" +
+            "           ,[tempsEcoule]" +
+            "           ,[etat]" +
+            "           ,[note_obtenue]" +
+            "           ,[niveau_obtenu]" +
+            "           ,[idTest]" +
+            "           ,[idUtilisateur])" +
+            "     VALUES" +
+            "           (?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?)";
 }
