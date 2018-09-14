@@ -29,9 +29,24 @@ public class ServletCreationTheme extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String theme = request.getParameter("theme");
-        request.setAttribute("theme", theme);
+        String libelle = request.getParameter("libelle");
+        try{
+            Context context = new InitialContext();
+            DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
+            Connection connection = dataSource.getConnection();
+            Statement statement = connection.createStatement();
 
+
+            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.themeCreate);
+            preparedStatement.setString(1,"libelle");
+            preparedStatement.executeUpdate();
+
+            this.doGet(request,response);
+
+        }
+        catch (SQLException | NamingException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -57,7 +72,7 @@ public class ServletCreationTheme extends HttpServlet {
             }
 
             request.setAttribute( "theme", listThemes );
-            this.getServletContext().getRequestDispatcher( "/WEB-INF/creationTheme.jsp" ).forward( request, response );
+            this.getServletContext().getRequestDispatcher( "/themes" ).forward( request, response );
 
         }
         catch (SQLException | NamingException e) {
@@ -66,7 +81,7 @@ public class ServletCreationTheme extends HttpServlet {
 
 
 
-        this.getServletContext().getRequestDispatcher("/themes").forward(request, response);
+       // this.getServletContext().getRequestDispatcher("/themes").forward(request, response);
 
 
     }

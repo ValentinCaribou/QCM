@@ -20,10 +20,10 @@
     </jsp:include>
     <div class="row2 bordure3">
         <div class="col-lg-10 creationThemeDivFormulaireCreation">
-            <form class="form-group row" action="${pageContext.request.contextPath}/themes" method="post">
+            <form class="form-group row" action="${pageContext.request.contextPath}/theme" method="post">
                 <label for="theme-text-input" class="col-2 col-form-label">Nom du theme :</label>
                 <div class="col-lg-6">
-                    <input class="form-control" type="text" value="" id="theme-text-input" name="theme">
+                    <input class="form-control" type="text" value="" id="theme-text-input" name="libelle">
                 </div>
                 <div class="col-lg-4">
                     <button type="submit" class="btn btn-outline-primary">Valider</button>
