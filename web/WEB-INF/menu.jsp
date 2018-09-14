@@ -10,7 +10,7 @@
     <li><a href="${pageContext.request.contextPath}/index">Accueil</a></li>
     <li><a href="${pageContext.request.contextPath}/listeFormation">Liste des QCM</a></li>
     <% if (session.getAttribute("status") == null){ %>
-        <li><a href="${pageContext.request.contextPath}/identificationAnimateur">Accès animateur</a></li>
+        <li><a href="${pageContext.request.contextPath}/identificationAnimateur">Connexion</a></li>
     <%} else {
         if(session.getAttribute("status").equals("Formateur")){ %>
             <li><a href="${pageContext.request.contextPath}/listeFormationModif">Accès animateur</a></li>

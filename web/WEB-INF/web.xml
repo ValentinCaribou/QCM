@@ -10,26 +10,6 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>premiereServlet</servlet-name>
-        <servlet-class>fr.eni.ecole.servlets.Premiere</servlet-class>
-        <init-param>
-            <param-name>namespace</param-name>
-            <param-value></param-value>
-        </init-param>
-    </servlet>
-
-    <servlet>
-        <servlet-name>premierServlet</servlet-name>
-        <servlet-class>fr.eni.ecole.servlets.Servlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>premierServlet</servlet-name>
-        <url-pattern>/premiere</url-pattern>
-        <url-pattern>/first</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>testIndirect</servlet-name>
         <jsp-file>/WEB-INF/testIndirect.jsp</jsp-file>
     </servlet>
@@ -47,6 +27,26 @@
     <servlet-mapping>
         <servlet-name>Formateur</servlet-name>
         <url-pattern>/formateur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IndexResponsable</servlet-name>
+        <jsp-file>/WEB-INF/indexResponsable.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IndexResponsable</servlet-name>
+        <url-pattern>/indexResponsable</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InscriptionCandidat</servlet-name>
+        <jsp-file>/WEB-INF/InscrireUnCandidat.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InscriptionCandidat</servlet-name>
+        <url-pattern>/inscriptionCandidat</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -68,6 +68,7 @@
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
+
 
     <servlet>
         <servlet-name>IdentificationAnimateur</servlet-name>

@@ -3,13 +3,13 @@ package fr.eni.ecole.enumRepo;
 public enum Profil {
     CANDIDAT_LIBRE(1), STAGIAIRE(2), RESPONSABLE(3), FORMATEUR(4), ADMIN(5), CELLULE_RECRUTEMENT(6);
 
-    private Integer codeProfil;
+    public int codeProfil;
 
-    public Integer getCode() {
+    public int getCode() {
         return codeProfil;
     }
 
-    private Profil(Integer code)
+    private Profil(int code)
     {
         this.codeProfil = code;
     }

@@ -16,7 +16,7 @@
 <body>
 <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
-        <jsp:param name="title" value="TP Web - Acces Animateur" />
+        <jsp:param name="title" value="Connexion" />
     </jsp:include>
     <div class="row2 bordure3">
         <div class="col-lg-10">

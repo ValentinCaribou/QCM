@@ -1,6 +1,7 @@
 package fr.eni.ecole.servlets;
 
 import fr.eni.ecole.constantes.ConstantesSql;
+import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.User;
 
 import javax.naming.Context;
@@ -13,6 +14,8 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
+
+import static fr.eni.ecole.enumRepo.Profil.CANDIDAT_LIBRE;
 
 @WebServlet(name = "ServletIdentification", urlPatterns = "/identificationUser")
 public class ServletIdentification extends HttpServlet {
@@ -53,7 +56,7 @@ public class ServletIdentification extends HttpServlet {
             String codePromo = null;
             int codeProfil = 0;
 
-            if (session.getAttribute("mail") == request.getParameter("mail")){
+            if (session.getAttribute("mail") == request.getParameter("mail") && session.getAttribute("password") == request.getParameter("password")){
                 this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
             }
 
@@ -79,18 +82,37 @@ public class ServletIdentification extends HttpServlet {
 
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
-                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
-            }
+                for (Profil p : Profil.values()){
+                    if (codeProfil == p.getCode())
+                    {
+                        switch (p){
+                            case CANDIDAT_LIBRE:
+                            case STAGIAIRE:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
 
-            String infos = null;
-            if (cookies != null) {
-                for (Cookie c : cookies) {
-                    if (c.getName().equals("Bonjour")) {
-                        infos = c.getValue();
-                        break;
+                            case RESPONSABLE:
+                                this.getServletContext().getRequestDispatcher("/indexResponsable").forward(request, response);
+                                break;
+
+                            case FORMATEUR:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case ADMIN:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                            case CELLULE_RECRUTEMENT:
+                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                break;
+
+                        }
                     }
                 }
             }
+
+
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (NamingException e) {

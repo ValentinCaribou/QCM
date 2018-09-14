@@ -50,6 +50,26 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>IndexResponsable</servlet-name>
+        <jsp-file>/WEB-INF/indexResponsable.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IndexResponsable</servlet-name>
+        <url-pattern>/indexResponsable</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InscriptionCandidat</servlet-name>
+        <jsp-file>/WEB-INF/InscrireUnCandidat.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InscriptionCandidat</servlet-name>
+        <url-pattern>/inscriptionCandidat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Erreur</servlet-name>
         <jsp-file>/WEB-INF/ErrorPages.jsp</jsp-file>
     </servlet>
@@ -68,6 +88,7 @@
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
+
 
     <servlet>
         <servlet-name>IdentificationAnimateur</servlet-name>
