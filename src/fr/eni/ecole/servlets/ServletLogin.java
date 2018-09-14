@@ -52,7 +52,7 @@ public class ServletLogin extends HttpServlet {
             String password = (String) request.getParameter("password");
 
             PreparedStatement preparedStatement = connection.prepareStatement(connectionQuery);
-
+            preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
             String mailBdd = null;
