@@ -62,7 +62,7 @@ public class ServletLogin extends HttpServlet {
             String codePromo = null;
             int codeProfil = 0;
 
-            if (session.getAttribute("mail") == request.getParameter("mail")){
+            if (session.getAttribute("mail") == request.getParameter("mail") && session.getAttribute("password") == request.getParameter("password")){
                 this.getServletContext().getRequestDispatcher("/index").forward(request, response);
             }
 
@@ -99,7 +99,7 @@ public class ServletLogin extends HttpServlet {
                                 break;
 
                             case RESPONSABLE:
-                                response.sendRedirect("/index");
+                                response.sendRedirect("/indexResponsable");
                                 break;
 
                             case FORMATEUR:
