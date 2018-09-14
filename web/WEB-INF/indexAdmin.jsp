@@ -35,7 +35,7 @@
                                 <th>Email</th>
                                 <th>Profil</th>
                             </tr>
-                            <% ArrayList<User> listeRespForm = (ArrayList<Formation>) request.getAttribute("listeRespForm");%>
+                            <% ArrayList<Formation> listeRespForm = (ArrayList<Formation>) request.getAttribute("listeRespForm");%>
                             <% for(Formation respForm : listeRespForm){
                             %>
                             <tr>
