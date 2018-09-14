@@ -23,7 +23,7 @@
             <form class="form-group row" action="${pageContext.request.contextPath}/theme" method="post">
                 <label for="theme-text-input" class="col-2 col-form-label">Nom du theme :</label>
                 <div class="col-lg-6">
-                    <input class="form-control" type="text" value="" id="theme-text-input" name="libelle">
+                    <input class="form-control" type="text" id="theme-text-input" name="libelle">
                 </div>
                 <div class="col-lg-4">
                     <button type="submit" class="btn btn-outline-primary">Valider</button>
@@ -35,8 +35,14 @@
                 %>
                 <tr>
                     <td><%=listTheme.getLibelle()%></td>
-                    <td><button type="submit" class="btn btn-outline-warning">Modifier</button></td>
-                    <td><button type="submit" class="btn btn-outline-danger">Supprimer</button></td>
+                    <td>
+                        <form action="/WEB-INF/gestionTheme.jsp" method="post">
+                            <button type="submit" name="modifier" class="btn btn-outline-warning">Modifier</button>
+                        </form>
+                        <form action="${pageContext.request.contextPath}/theme" method="post">
+                        <button type="submit" value="<%=listTheme.getId()%>" name="Supprimer" class="btn btn-outline-danger">Supprimer</button>
+                        </form>
+                    </td>
                 </tr>
                 <%
                     }

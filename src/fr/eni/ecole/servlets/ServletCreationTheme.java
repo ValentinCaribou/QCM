@@ -29,16 +29,30 @@ public class ServletCreationTheme extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String libelle = request.getParameter("libelle");
+
+
         try{
             Context context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
             Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement();
 
-
+            String supprimer = request.getParameter("supprimer");
+            if (supprimer != null && supprimer!=""){
+                int supr = Integer.parseInt(request.getParameter("supprimer"));
+                    PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.themeDelete);
+                    preparedStatement.setInt(1,supr);
+                    preparedStatement.executeUpdate();
+                    this.doGet(request,response);
+                    return;
+            }
+            String libelle = request.getParameter("libelle");
+            if (libelle == "" || libelle == null){
+                this.doGet(request,response);
+                return;
+            }
             PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.themeCreate);
-            preparedStatement.setString(1,"libelle");
+            preparedStatement.setString(1,libelle);
             preparedStatement.executeUpdate();
 
             this.doGet(request,response);
@@ -47,6 +61,8 @@ public class ServletCreationTheme extends HttpServlet {
         catch (SQLException | NamingException e) {
             e.printStackTrace();
         }
+
+
 
     }
 
@@ -67,7 +83,7 @@ public class ServletCreationTheme extends HttpServlet {
 
             while(resultSet.next()) {
                 String libelleBdd = resultSet.getString("libelle");
-                Theme theme = new Theme(libelleBdd);
+                Theme theme = new Theme(resultSet.getInt("IdTheme"),libelleBdd);
                 listThemes.add(theme);
             }
 
