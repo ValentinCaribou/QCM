@@ -111,7 +111,7 @@ public class ServletLogin extends HttpServlet {
                                 break;
 
                             case ADMIN:
-                                response.sendRedirect("/index");
+                                response.sendRedirect("/indexAdmin");
                                 break;
                         }
                         return;
