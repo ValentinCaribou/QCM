@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="bordure">
     <div class="col-lg-10">
-        <h1 class="text"><%=request.getParameter("title") != null ? request.getParameter("title") : "TP Web"%></h1>
+        <h1 class="text"><%=request.getParameter("title") != null ? request.getParameter("title") : "QCM"%></h1>
     </div>
     <%
         String nom = (String) session.getAttribute("nom");
