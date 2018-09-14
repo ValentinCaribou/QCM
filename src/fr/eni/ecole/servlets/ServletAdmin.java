@@ -24,7 +24,7 @@ import static fr.eni.ecole.constantes.ConstantesSql.getFormRespQuery;
 @WebServlet(name = "ServletAdmin", urlPatterns = "/admin")
 public class ServletAdmin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        this.doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -24,7 +24,7 @@
         <div class="row2 bordure3">
             <body>
                     <div class="col-lg-6">
-                        <form action="${pageContext.request.contextPath}/adminPage/create" method="post">
+                        <form action="${pageContext.request.contextPath}/admin" method="post">
                             <label for="userName">Nom : </label>
                             <input class="form-control" id="userName" type="text">
                             <label for="userFirstName">Prénom : </label>
@@ -43,10 +43,8 @@
                                 </label>
                             </div>
                             <br/>
-                            <div class="col-lg-4 offset-lg-4">
-                                <input class="btn btn-primary" type="submit" value="Valider">
-                                <input class="btn float-md-right" type="reset" value="Annuler">
-                            </div>
+                            <button class="btn btn-primary" type="submit" value="create">Valider</button>
+                            <input class="btn float-md-right" type="reset" value="Annuler">
                         </form>
                     </div>
                     <div class="col-lg-6">
