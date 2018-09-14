@@ -1,5 +1,6 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.*;
 
 import javax.naming.Context;
@@ -13,9 +14,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-import static fr.eni.ecole.constantes.ConstantesSql.getCandidat;
-import static fr.eni.ecole.constantes.ConstantesSql.getTestQCM;
-import static fr.eni.ecole.constantes.ConstantesSql.getThemeQcm;
+import static fr.eni.ecole.constantes.ConstantesSql.*;
 
 @WebServlet(name = "TraitementInscription", urlPatterns = "/traitementInscription")
 public class InscriptionCandidat extends HttpServlet {
@@ -46,7 +45,7 @@ public class InscriptionCandidat extends HttpServlet {
             }
 
             ArrayList<Theme> listeTheme = new ArrayList<Theme>();
-            ResultSet resultSet = statement.executeQuery(getThemeQcm);
+            ResultSet resultSet = statement.executeQuery(getThemeQcmQuery);
             while (resultSet.next()){
 
                 listeTheme.add(new Theme(resultSet.getInt("idTheme"),
@@ -68,7 +67,11 @@ public class InscriptionCandidat extends HttpServlet {
             request.setAttribute("listeTest", listeTest);
 
             ArrayList<Utilisateur> listeUtilisateur = new ArrayList<Utilisateur>();
-            ResultSet resultSetCandidat = statement.executeQuery(getCandidat);
+
+            PreparedStatement preparedStatement = connection.prepareStatement(getCandidatQuery);
+            preparedStatement.setInt(1, Profil.CANDIDAT_LIBRE.getCode());
+            preparedStatement.setInt(1, Profil.STAGIAIRE.getCode());
+            ResultSet resultSetCandidat = preparedStatement.executeQuery();
             while (resultSetCandidat.next()){
 
                 listeUtilisateur.add(new Utilisateur(resultSetCandidat.getInt("idUtilisateur"),

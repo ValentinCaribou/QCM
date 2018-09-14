@@ -27,5 +27,7 @@ public class ServletAdmin extends HttpServlet {
         } catch (NamingException | SQLException e) {
             e.printStackTrace();
         }
+
+        this.getServletContext().getRequestDispatcher("/inscriptionCandidat").forward(request, response);
     }
 }
