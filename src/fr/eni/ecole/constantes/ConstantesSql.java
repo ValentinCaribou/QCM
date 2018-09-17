@@ -17,15 +17,30 @@ public class ConstantesSql {
 
     public static final String getCandidatStagiaireQuery = getUserQuery + "WHERE codeProfil = ? or codeProfil = ?;";
     public static final String getFormRespQuery =   "SELECT [idUtilisateur] " +
-            "      ,[nom] " +
-            "      ,[prenom] " +
-            "      ,[email] " +
-            "      ,[password] " +
-            "      ,p.libelle AS profil " +
-            "  FROM [BDD_QCM].[dbo].[UTILISATEUR] u " +
-            "  JOIN [BDD_QCM].[dbo].[PROFIL] p " +
-            "  ON p.codeProfil = u.codeProfil " +
-            "  WHERE u.codeProfil = ? OR u.codeProfil = ?";
+                                                    "      ,[nom] " +
+                                                    "      ,[prenom] " +
+                                                    "      ,[email] " +
+                                                    "      ,[password] " +
+                                                    "      ,p.libelle AS profil " +
+                                                    "  FROM [BDD_QCM].[dbo].[UTILISATEUR] u " +
+                                                    "  JOIN [BDD_QCM].[dbo].[PROFIL] p " +
+                                                    "  ON p.codeProfil = u.codeProfil " +
+                                                    "  WHERE u.codeProfil = ? OR u.codeProfil = ?";
+
+    public static final String insertFormRespQuery = "INSERT INTO [BDD_QCM].[dbo].[UTILISATEUR] " +
+                                                     "           ([nom] " +
+                                                     "           ,[prenom] " +
+                                                     "           ,[email] " +
+                                                     "           ,[password] " +
+                                                     "           ,[codeProfil] " +
+                                                     "           ,[codePromo]) " +
+                                                     "     VALUES " +
+                                                     "           ( ?" +
+                                                     "           , ?" +
+                                                     "           , ?" +
+                                                     "           , ?" +
+                                                     "           , ?" +
+                                                     "           , ?)";
 
     /* Themes */
     public static final String getTestQCM = "SELECT [idTest]" +

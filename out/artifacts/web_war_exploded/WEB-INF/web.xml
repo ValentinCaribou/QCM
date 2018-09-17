@@ -79,16 +79,6 @@
         <url-pattern>/adminPage</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>CreateRespFormAccount</servlet-name>
-        <jsp-file>/WEB-INF/indexAdmin.jsp</jsp-file>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>CreateRespFormAccount</servlet-name>
-        <url-pattern>/adminPage/create</url-pattern>
-    </servlet-mapping>
-
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>

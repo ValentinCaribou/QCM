@@ -23,16 +23,41 @@
         </div>
         <div class="row2 bordure3">
             <body>
-                    <div class="col-lg-6">
-                        <form action="${pageContext.request.contextPath}/admin" method="post">
+                <%
+                    String warning = (String)request.getAttribute("warningInsert");
+                    String error = (String)request.getAttribute("errorInsert");
+                %>
+                <div class="col-lg-6">
+                    <div class="col-lg-12 bordure">
+                        <%
+                            if(warning != null && !warning.equals("")) {
+                        %>
+                        <div class="alert alert-warning">
+                            <%=warning%>
+                        </div>
+                        <%
+                            }
+                        %>
+
+                        <%
+                            if(error != null && !error.equals("")) {
+                        %>
+                        <div class="alert alert-danger">
+                            <%=error%>
+                        </div>
+                        <%
+                            }
+                        %>
+                        <h3>Créer un formateur / responsable de formations</h3>
+                        <form action="${pageContext.request.contextPath}/admin/create" method="post">
                             <label for="userName">Nom : </label>
-                            <input class="form-control" id="userName" type="text">
+                            <input class="form-control" name="nom" id="userName" type="text">
                             <label for="userFirstName">Prénom : </label>
-                            <input class="form-control" id="userFirstName" type="text">
+                            <input class="form-control" name="prenom" id="userFirstName" type="text">
                             <label for="userEmail">Mail : </label>
-                            <input class="form-control" id="userEmail" type="email">
+                            <input class="form-control" name="email" id="userEmail" type="email">
                             <label for="userPassword">Mot de passe : </label>
-                            <input class="form-control" id="userPassword" type="password">
+                            <input class="form-control" name="password" id="userPassword" type="password">
                             <div class="col-lg-4 offset-lg-4 align-items-md-center">
                                 <span>Profil : </span>
                                 <label class="radio-inline">
@@ -43,44 +68,49 @@
                                 </label>
                             </div>
                             <br/>
-                            <button class="btn btn-primary" type="submit" value="create">Valider</button>
+                            <button class="btn btn-primary" type="submit" name="mode" value="create">Valider</button>
                             <input class="btn float-md-right" type="reset" value="Annuler">
                         </form>
                     </div>
-                    <div class="col-lg-6">
-                        <table class="table texteColor">
-                            <tr>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>Email</th>
-                                <th>Profil</th>
-                                <th></th>
-                            </tr>
-                            <% ArrayList<FormRespDto> listeRespForm = (ArrayList<FormRespDto>) request.getAttribute("users");%>
-                            <% for(FormRespDto respForm : listeRespForm){
-                            %>
-                            <tr>
-                                <td><%=respForm.getNom()%></td>
-                                <td><%=respForm.getPrenom()%></td>
-                                <td><%=respForm.getEmail()%></td>
-                                <td><%=respForm.getProfil()%></td>
-                                <td>
-                                    <form action="/admin/modifier" method="post">
-                                        <button class="btn btn-outline-warning" type="submit" name="Modifier" value="<%=respForm.getIdUtilisateur()%>">Modifier</button>
-                                    </form>
-                                    <form action="/admin/supprimer">
-                                        <button class="btn btn-outline-danger" type="submit" name="Supprimer" value="<%=respForm.getIdUtilisateur()%>">Supprimer</button>
-                                    </form>
-                                </td>
-                            </tr>
-                            <%
-                                }
-                            %>
-                        </table>
+                    <div class="col-lg-12">
+                        <h3>Logs d'incidents</h3>
+                        <div style="overflow: scroll; height: 250px;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        </div>
                     </div>
-            <div class="col-lg-12">
-
-            </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Liste des formateurs et responsables de formations</h3>
+                    <table class="table texteColor">
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Email</th>
+                            <th>Profil</th>
+                            <th></th>
+                        </tr>
+                        <% ArrayList<FormRespDto> listeRespForm = (ArrayList<FormRespDto>) request.getAttribute("users");%>
+                        <% for(FormRespDto respForm : listeRespForm){
+                        %>
+                        <tr>
+                            <td><%=respForm.getNom()%></td>
+                            <td><%=respForm.getPrenom()%></td>
+                            <td><%=respForm.getEmail()%></td>
+                            <td><%=respForm.getProfil()%></td>
+                            <td>
+                                <form action="/admin/modifier" method="post">
+                                    <button class="btn btn-outline-warning" type="submit" name="Modifier" value="<%=respForm.getIdUtilisateur()%>">Modifier</button>
+                                </form>
+                                <form action="/admin/supprimer">
+                                    <button class="btn btn-outline-danger" type="submit" name="Supprimer" value="<%=respForm.getIdUtilisateur()%>">Supprimer</button>
+                                </form>
+                            </td>
+                        </tr>
+                        <%
+                            }
+                        %>
+                    </table>
+                </div>
             </body>
         </div>
         <p class="eniecole">TP ENI Ecole</p>

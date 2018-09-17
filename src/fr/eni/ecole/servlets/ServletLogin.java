@@ -91,7 +91,6 @@ public class ServletLogin extends HttpServlet {
                 // redirection
                 for(Profil p : Profil.values()) {
                     if(codeProfil == p.getCode()) {
-                        System.out.println(codeProfil);
                         switch(p) {
                             case CANDIDAT_LIBRE:
                             case STAGIAIRE:
