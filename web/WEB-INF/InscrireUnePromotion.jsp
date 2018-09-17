@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="fr.eni.ecole.repo.Utilisateur" %>
 <%@ page import="fr.eni.ecole.repo.Test" %>
+<%@ page import="fr.eni.ecole.repo.Promotion" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrateur
@@ -24,16 +25,16 @@
         </jsp:include>
         <div class="row2 bordure3">
             <div class="col-lg-10">
-                <form method="post" action="${pageContext.request.contextPath}/servletInscriptionCandidat">
+                <form method="post" action="${pageContext.request.contextPath}/servletInscriptionPromotion">
                     <h5 class="text">Inscription d'un candidat/Stagiaire</h5>
                 <br>
                     <div class="col-lg-6">
-                        <h6 for="listeUtilisateur">Liste des candidat :</h6>
-                        <select class="form-control" id="listeUtilisateur" name="Utilisateur">
-                            <% ArrayList<Utilisateur> listeUtilisateurs = (ArrayList<Utilisateur>) request.getAttribute("listeUtilisateur");%>
-                            <% for(Utilisateur listeUtilisateur : listeUtilisateurs){
+                        <h6 for="listeUtilisateur">Liste des promotions :</h6>
+                        <select class="form-control" id="listePromotion" name="Promotion">
+                            <% ArrayList<Promotion> listePromotions = (ArrayList<Promotion>) request.getAttribute("listePromotion");%>
+                            <% for(Promotion listePromotion : listePromotions){
                             %>
-                            <option value="<%=listeUtilisateur.getIdUtilisateur()%>"><%=listeUtilisateur.getNom() + " " + listeUtilisateur.getPrenom()%></option>
+                            <option value="<%=listePromotion.getCodePromo()%>"><%=listePromotion.getLibelle()%></option>
                             <%
                                 }
                             %>

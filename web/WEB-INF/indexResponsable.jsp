@@ -14,8 +14,7 @@
 </head>
 <body>
 <div class="col-lg-12">
-    <jsp:include page="/WEB-INF/headerNavResponsable.jsp">
-    </jsp:include>
+    <jsp:include page="/WEB-INF/headerNavResponsable.jsp" />
     <div class="col-lg-12">
         <jsp:include page="/WEB-INF/header.jsp">
             <jsp:param name="title" value="TP Web - Liste formation" />

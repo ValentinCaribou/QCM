@@ -12,6 +12,19 @@ public class ConstantesSql {
             "      ,[codeProfil]" +
             "      ,[codePromo]" +
             "  FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE codeProfil = 1 or codeProfil = 2;";
+
+    public static final String getCandidatPromotion = "SELECT [idUtilisateur]" +
+            "      ,[nom]" +
+            "      ,[prenom]" +
+            "      ,[email]" +
+            "      ,[password]" +
+            "      ,[codeProfil]" +
+            "      ,p.libelle AS promotion" +
+            "  FROM [BDD_QCM].[dbo].[UTILISATEUR] u" +
+            "  JOIN [BDD_QCM].[dbo].[PROMOTION] p" +
+            "  ON p.codePromo = u.codePromo" +
+            "  WHERE u.codePromo = 1 or u.codePromo = 2;";
+
     public static final String getTestQCM = "SELECT [idTest]" +
             "      ,[libelle]" +
             "      ,[description]" +
@@ -39,6 +52,16 @@ public class ConstantesSql {
             "           ,?" +
             "           ,?)";
 
+    public static final String getCandidatCodePromo = "SELECT [idUtilisateur]" +
+            "      ,[nom]" +
+            "      ,[prenom]" +
+            "      ,[email]" +
+            "      ,[password]" +
+            "      ,[codeProfil]" +
+            "      ,[codePromo]" +
+            "  FROM [BDD_QCM].[dbo].[UTILISATEUR]" +
+            "  WHERE [codePromo] = ?;";
+
     public static final String createUser = "INSERT INTO [BDD_QCM].[dbo].[UTILISATEUR]\n" +
             "           ([nom]" +
             "           ,[prenom]" +
@@ -53,4 +76,8 @@ public class ConstantesSql {
             "           ,?" +
             "           ,?" +
             "           ,?)";
+
+    public static final String getPromotion = "SELECT [codePromo]" +
+            "      ,[Libelle]" +
+            "  FROM [BDD_QCM].[dbo].[PROMOTION]";
 }

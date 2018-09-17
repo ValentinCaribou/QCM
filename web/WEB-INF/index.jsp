@@ -8,6 +8,8 @@
   </head>
   <body>
   <div class="col-lg-12">
+    <jsp:include page="/WEB-INF/headerNav.jsp" />
+  <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
       <jsp:param name="title" value="QCM - Accueil" />
     </jsp:include>
@@ -22,6 +24,7 @@
       </div>
     </div>
     <p class="eniecole">TP ENI Ecole</p>
+  </div>
   </div>
   </body>
 </html>
