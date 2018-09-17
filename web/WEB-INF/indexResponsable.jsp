@@ -14,18 +14,22 @@
 </head>
 <body>
 <div class="col-lg-12">
-    <jsp:include page="/WEB-INF/header.jsp">
-        <jsp:param name="title" value="Page Responsable" />
+    <jsp:include page="/WEB-INF/headerNavResponsable.jsp">
     </jsp:include>
+    <div class="col-lg-12">
+        <jsp:include page="/WEB-INF/header.jsp">
+            <jsp:param name="title" value="TP Web - Liste formation" />
+        </jsp:include>
+    </div>
     <div class="row2 bordure3">
         <div class="col-lg-10">
             <p class="text">Bienvenue sur la page de Responsable</p>
             <p class="text">Accèdez à toutes les fonctionnalités qui vous sont autorisées</p>
             <p class="text"></p>
         </div>
-        <div class="col-lg-2 bordure2">
-            <%@include file="menuResponsable.jsp"%>
-        </div>
+        <%--<div class="col-lg-2 bordure2">--%>
+            <%--<%@include file="menuResponsable.jsp"%>--%>
+        <%--</div>--%>
     </div>
     <p class="eniecole">TP ENI Ecole</p>
 </div>

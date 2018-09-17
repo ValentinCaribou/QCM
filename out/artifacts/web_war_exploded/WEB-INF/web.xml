@@ -110,6 +110,16 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CreationCandidat</servlet-name>
+        <jsp-file>/WEB-INF/creationCandidat.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreationCandidat</servlet-name>
+        <url-pattern>/creationCandidat</url-pattern>
+    </servlet-mapping>
+
 
     <session-config>
         <session-timeout>10</session-timeout>

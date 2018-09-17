@@ -38,4 +38,19 @@ public class ConstantesSql {
             "           ,?" +
             "           ,?" +
             "           ,?)";
+
+    public static final String createUser = "INSERT INTO [BDD_QCM].[dbo].[UTILISATEUR]\n" +
+            "           ([nom]" +
+            "           ,[prenom]" +
+            "           ,[email]" +
+            "           ,[password]" +
+            "           ,[codeProfil]" +
+            "           ,[codePromo])" +
+            "     VALUES" +
+            "           (?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?)";
 }

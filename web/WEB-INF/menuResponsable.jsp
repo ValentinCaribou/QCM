@@ -9,7 +9,7 @@
 <ol>
     <li><a href="${pageContext.request.contextPath}/indexResponsable">Accueil</a></li>
     <li><a href="${pageContext.request.contextPath}/traitementInscription">Inscrire des gens</a></li>
-    <li><a href="${pageContext.request.contextPath}/CreerUnCompte">Créer un compte</a></li>
+    <li><a href="${pageContext.request.contextPath}/creationCandidat">Créer un compte</a></li>
     <li><a href="${pageContext.request.contextPath}/InscriptionPromo">Inscrire une pormotion</a></li>
     <li><a href="${pageContext.request.contextPath}/Result">Voir les résultats</a></li>
     <li>
