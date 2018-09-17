@@ -79,6 +79,16 @@
         <url-pattern>/adminPage</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>UpdateFormResp</servlet-name>
+        <jsp-file>/WEB-INF/updateFormResp.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateFormResp</servlet-name>
+        <url-pattern>/updatePage</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>

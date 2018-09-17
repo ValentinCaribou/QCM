@@ -27,6 +27,16 @@ public class ConstantesSql {
                                                     "  ON p.codeProfil = u.codeProfil " +
                                                     "  WHERE u.codeProfil = ? OR u.codeProfil = ?";
 
+    public static final String getUserById = "SELECT [idUtilisateur] " +
+                                             "      ,[nom] " +
+                                             "      ,[prenom] " +
+                                             "      ,[email] " +
+                                             "      ,[password] " +
+                                             "      ,[codeProfil] " +
+                                             "      ,[codePromo] " +
+                                             "  FROM [BDD_QCM].[dbo].[UTILISATEUR] u " +
+                                             "  WHERE [idUtilisateur] = ?";
+
     public static final String insertFormRespQuery = "INSERT INTO [BDD_QCM].[dbo].[UTILISATEUR] " +
                                                      "           ([nom] " +
                                                      "           ,[prenom] " +
@@ -41,6 +51,16 @@ public class ConstantesSql {
                                                      "           , ?" +
                                                      "           , ?" +
                                                      "           , ?)";
+
+    public static final String deleteFormRespQuery = "DELETE FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE idUtilisateur = ?";
+
+    public static final String updateFormRespQuery = "UPDATE [BDD_QCM].[dbo].[UTILISATEUR] " +
+                                                     "   SET [nom] = ? " +
+                                                     "      ,[prenom] = ? " +
+                                                     "      ,[email] = ? " +
+                                                     "      ,[password] = ? " +
+                                                     "      ,[codeProfil] = ? " +
+                                                     " WHERE idUtilisateur = ?";
 
     /* Themes */
     public static final String getTestQCM = "SELECT [idTest]" +

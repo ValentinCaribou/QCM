@@ -68,7 +68,7 @@
                                 </label>
                             </div>
                             <br/>
-                            <button class="btn btn-primary" type="submit" name="mode" value="create">Valider</button>
+                            <button class="btn btn-primary" type="submit">Valider</button>
                             <input class="btn float-md-right" type="reset" value="Annuler">
                         </form>
                     </div>
@@ -98,11 +98,13 @@
                             <td><%=respForm.getEmail()%></td>
                             <td><%=respForm.getProfil()%></td>
                             <td>
-                                <form action="/admin/modifier" method="post">
-                                    <button class="btn btn-outline-warning" type="submit" name="Modifier" value="<%=respForm.getIdUtilisateur()%>">Modifier</button>
+                                <form action="${pageContext.request.contextPath}/admin/update" method="get">
+                                    <input type="hidden" name="id" value="<%=respForm.getIdUtilisateur()%>" />
+                                    <button class="btn btn-outline-warning" type="submit">Modifier</button>
                                 </form>
-                                <form action="/admin/supprimer">
-                                    <button class="btn btn-outline-danger" type="submit" name="Supprimer" value="<%=respForm.getIdUtilisateur()%>">Supprimer</button>
+                                <form action="${pageContext.request.contextPath}/admin/delete" method="post">
+                                    <input type="hidden" name="id" value="<%=respForm.getIdUtilisateur()%>" />
+                                    <button class="btn btn-outline-danger" type="submit">Supprimer</button>
                                 </form>
                             </td>
                         </tr>
