@@ -36,11 +36,12 @@
                 <tr>
                     <td><%=listTheme.getLibelle()%></td>
                     <td>
-                        <form action="/WEB-INF/gestionTheme.jsp" method="post">
-                            <button type="submit" name="modifier" class="btn btn-outline-warning">Modifier</button>
+                        <form action="${pageContext.request.contextPath}/gestions" method="get">
+                            <input type="hidden" name="idTheme" value="<%=listTheme.getId()%>" />
+                            <button type="submit" name="modifier"  class="btn btn-outline-warning">Modifier</button>
                         </form>
                         <form action="${pageContext.request.contextPath}/theme" method="post">
-                        <button type="submit" value="<%=listTheme.getId()%>" name="Supprimer" class="btn btn-outline-danger">Supprimer</button>
+                        <button type="submit" value="<%=listTheme.getId()%>" name="supprimer" class="btn btn-outline-danger">Supprimer</button>
                         </form>
                     </td>
                 </tr>

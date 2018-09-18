@@ -129,6 +129,18 @@
         <jsp-file>/WEB-INF/creationTest.jsp</jsp-file>
     </servlet>
 
+    <servlet-mapping>
+        <servlet-name>gestion</servlet-name>
+        <url-pattern>/gestion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>gestion</servlet-name>
+        <jsp-file>/WEB-INF/gestionTheme.jsp</jsp-file>
+    </servlet>
+
+
+
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>

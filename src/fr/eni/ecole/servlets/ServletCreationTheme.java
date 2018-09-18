@@ -47,10 +47,11 @@ public class ServletCreationTheme extends HttpServlet {
                     return;
             }
             String libelle = request.getParameter("libelle");
-            if (libelle == "" || libelle == null){
+            if (libelle.equals("")  || libelle.equals(null)){
                 this.doGet(request,response);
                 return;
             }
+            //String modifier =  request.getParameter("modifier");
             PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.themeCreate);
             preparedStatement.setString(1,libelle);
             preparedStatement.executeUpdate();
