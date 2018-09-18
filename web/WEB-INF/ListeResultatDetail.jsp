@@ -1,5 +1,6 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="fr.eni.ecole.repo.Utilisateur" %><%--
+<%@ page import="fr.eni.ecole.repo.Utilisateur" %>
+<%@ page import="fr.eni.ecole.repo.Epreuve" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 02/07/2018
@@ -22,31 +23,31 @@
     <div class="row2 bordure3">
         <body>
         <div class="col-lg-12">
+            <% Utilisateur candidat = (Utilisateur) request.getAttribute("Utilisateur");%>
+            <h3>Eleve : <%=candidat.getNom() + " " + candidat.getPrenom()%></h3>
             <table class="table texteColor">
                 <tr>
-                    <th>Nom</th>
-                    <th>Prenom</th>
-                    <th>Promotion</th>
-                    <th>Voir les resultats</th>
+                    <th>Nom du test</th>
+                    <th>Etat</th>
+                    <th>Note obtenue</th>
+                    <th>Niveau obtenue</th>
+                    <th>Temps ecouler</th>
                 </tr>
-                <% ArrayList<Utilisateur> listeUtilisateurs = (ArrayList<Utilisateur>) request.getAttribute("listeCandidat");%>
-                <% for(Utilisateur listeUtilisateur : listeUtilisateurs){
+                <% ArrayList<Epreuve> listeEpreuves = (ArrayList<Epreuve>) request.getAttribute("listeResultat");%>
+                <% for(Epreuve listeEpreuve : listeEpreuves){
                 %>
                 <tr>
-                    <td><%=listeUtilisateur.getNom()%></td>
-                    <td id="prenom"><%=listeUtilisateur.getPrenom()%></td>
-                    <td id="Promo"><%=listeUtilisateur.getCodePromo()%></td>
-                    <td>
-                    <form method="post" action="${pageContext.request.contextPath}/servletResultatDetailler">
-                        <input type="submit" class="btn btn-outline-success" value="Voir"/>
-                        <input type="hidden" name="idUser" value="<%=listeUtilisateur.getIdUtilisateur()%>"/>
-                    </form>
-                    </td>
+                    <td><%=listeEpreuve.getNomTest()%></td>
+                    <td><%=listeEpreuve.getEtat()%></td>
+                    <td><%=listeEpreuve.getNote_obtenue()%></td>
+                    <td><%=listeEpreuve.getNiveau_obtenu()%></td>
+                    <td><%=listeEpreuve.getTempsEcoule()%></td>
                 </tr>
                 <%
                     }
                 %>
             </table>
+            <button type="button" class="btn btn-outline-success" onclick="location.href='${pageContext.request.contextPath}/servletResultat'">Retour</button>
         </div>
         </body>
     </div>

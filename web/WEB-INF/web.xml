@@ -69,6 +69,16 @@
         <url-pattern>/resultat</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ResultatDetail</servlet-name>
+        <jsp-file>/WEB-INF/ListeResultatDetail.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ResultatDetail</servlet-name>
+        <url-pattern>/resultatDetail</url-pattern>
+    </servlet-mapping>
+
 
     <servlet>
         <servlet-name>Erreur</servlet-name>

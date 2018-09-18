@@ -24,12 +24,12 @@
             <jsp:param name="title" value="Inscrire un candidat / Stagiaire" />
         </jsp:include>
         <div class="row2 bordure3">
-            <div class="col-lg-10">
-                <form method="post" action="${pageContext.request.contextPath}/servletInscriptionPromotion">
-                    <h5 class="text">Inscription d'un candidat/Stagiaire</h5>
+            <div class="col-lg-6 offset-lg-3">
+                <form method="post" class="label-strong" action="${pageContext.request.contextPath}/servletInscriptionPromotion">
+                    <%--<h5 class="text">Inscription d'un candidat/Stagiaire</h5>--%>
                 <br>
-                    <div class="col-lg-6">
-                        <h6 for="listeUtilisateur">Liste des promotions :</h6>
+                    <div class="col-lg-12">
+                        <label for="listePromotion">Liste des promotions :</label>
                         <select class="form-control" id="listePromotion" name="Promotion">
                             <% ArrayList<Promotion> listePromotions = (ArrayList<Promotion>) request.getAttribute("listePromotion");%>
                             <% for(Promotion listePromotion : listePromotions){
@@ -39,10 +39,11 @@
                                 }
                             %>
                         </select>
+                        <br/>
                     </div>
                     </br>
-                    <div class="col-lg-6">
-                        <h6 for="listeTest">Liste des Tests :</h6>
+                    <div class="col-lg-12">
+                        <label for="listeTest">Liste des Tests :</label>
                         <select class="form-control" id="listeTest" name="Test">
                             <% ArrayList<Test> listeTests = (ArrayList<Test>) request.getAttribute("listeTest");%>
                             <% for(Test listeTest : listeTests){
@@ -52,16 +53,17 @@
                                 }
                             %>
                         </select>
+                        <br/>
                     </div>
                     </br>
-                    <div class="col-lg-6">
-                    <h6>Choisir la date de début : </h6>
+                     <div class="col-lg-12">
+                    <label for="dateDebut">Choisir la date de début : </label>
+                    <br/>
+                        <input class="form-control" type="date" name="dateDebut" id="dateDebut">
                     </br>
-                        <input type="date" name="dateDebut">
+                    <label for="dateFin">Choisir la date de fin : </label>
+                        <input class="form-control" class="dateTime" type="date" name="dateFin" id="dateFin">
                     </br>
-                    <h6>Choisir la date de fin : </h6>
-                    </br>
-                        <input class="dateTime" type="date" name="dateFin">
                 </br>
                     <input type="submit" class="btn btn-outline-primary btn-form-candidat" value="Valider">
                 </div>

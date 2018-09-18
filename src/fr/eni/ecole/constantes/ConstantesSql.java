@@ -80,4 +80,28 @@ public class ConstantesSql {
     public static final String getPromotion = "SELECT [codePromo]" +
             "      ,[Libelle]" +
             "  FROM [BDD_QCM].[dbo].[PROMOTION]";
+
+    public static final String getResultUser = "SELECT [idEpreuve]" +
+            "      ,[dateDedutValidite]" +
+            "      ,[dateFinValidite]" +
+            "      ,[tempsEcoule]" +
+            "      ,[etat]" +
+            "      ,[note_obtenue]" +
+            "      ,[niveau_obtenu]" +
+            "      ,t.libelle AS nomTest" +
+            "      ,[idUtilisateur]" +
+            "  FROM [BDD_QCM].[dbo].[EPREUVE] e" +
+            "  JOIN [BDD_QCM].[dbo].[TEST] t" +
+            "  ON e.idTest = t.idTest" +
+            "  WHERE [idUtilisateur] = ?";
+
+    public static final String getOneUser = "SELECT [idUtilisateur]" +
+            "      ,[nom]" +
+            "      ,[prenom]" +
+            "      ,[email]" +
+            "      ,[password]" +
+            "      ,[codeProfil]" +
+            "      ,[codePromo]" +
+            "  FROM [BDD_QCM].[dbo].[UTILISATEUR]" +
+            "  WHERE [idUtilisateur] = ?;";
 }
