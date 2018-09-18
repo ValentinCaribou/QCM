@@ -15,6 +15,7 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 import static fr.eni.ecole.constantes.ConstantesSql.getFormRespQuery;
 
@@ -48,6 +49,8 @@ public class ServletAdmin extends HttpServlet {
                         )
                 );
             }
+            Logger logger = Logger.getLogger(this.getServletName());
+            logger.info("test");
 
             request.setAttribute("users", utilisateurs);
 

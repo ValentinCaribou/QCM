@@ -73,3 +73,6 @@ div {
     margin-bottom: 10px;
 }
 
+.label-strong label {
+    font-weight: bold;
+}

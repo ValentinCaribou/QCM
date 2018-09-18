@@ -26,8 +26,8 @@
             String password = (String)request.getAttribute("password");
             int codeProfil = (int)request.getAttribute("codeProfil");
 
-            String warning = (String)request.getAttribute("warningInsert");
-            String error = (String)request.getAttribute("errorInsert");
+            String warning = (String)request.getAttribute("warningInsertFormResp");
+            String error = (String)request.getAttribute("errorInsertFormResp");
         %>
 
         <div class="col-lg-6 offset-lg-3">
@@ -51,7 +51,7 @@
                 }
             %>
             <h3>Modification du formateur / responsable de formations</h3>
-            <form action="${pageContext.request.contextPath}/admin/update" method="post">
+            <form action="${pageContext.request.contextPath}/admin/update" method="post" class="label-strong">
                 <label for="userName">Nom : </label>
                 <input class="form-control" name="userName" value="<%=nom%>" id="userName" type="text">
                 <label for="userFirstName">Prénom : </label>

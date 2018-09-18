@@ -12,9 +12,7 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.*;
 
-import static fr.eni.ecole.constantes.ConstantesSql.deleteFormRespQuery;
-import static fr.eni.ecole.constantes.ConstantesSql.getUserById;
-import static fr.eni.ecole.constantes.ConstantesSql.insertFormRespQuery;
+import static fr.eni.ecole.constantes.ConstantesSql.*;
 import static fr.eni.ecole.enumRepo.Profil.FORMATEUR;
 import static fr.eni.ecole.enumRepo.Profil.RESPONSABLE;
 
@@ -27,11 +25,10 @@ public class ServletAdminUpdate extends HttpServlet {
             Connection connection = dataSource.getConnection();
 
             int id = Integer.parseInt(request.getParameter("id"));
-            String nom = (String)request.getParameter("nom");
-            String prenom = (String)request.getParameter("prenom");
-            String email = (String)request.getParameter("email");
-            String password = (String)request.getParameter("password");
-            System.out.println(request.getParameter("codeProfil"));
+            String nom = (String)request.getParameter("userName");
+            String prenom = (String)request.getParameter("userFirstName");
+            String email = (String)request.getParameter("userEmail");
+            String password = (String)request.getParameter("userPassword");
             int codeProfil = Integer.parseInt(request.getParameter("codeProfil"));
 
             if( nom == null || nom.equals("") ||
@@ -39,30 +36,33 @@ public class ServletAdminUpdate extends HttpServlet {
                 email == null || email.equals("") ||
                 password == null || password.equals("") )
             {
-                request.setAttribute("warningInsert", "Tous les champs sont obligatoires");
+                request.setAttribute("warningInsertFormResp", "Tous les champs sont obligatoires");
                 this.doGet(request, response);
             }
             else {
                 if(codeProfil != FORMATEUR.getCode() && codeProfil != RESPONSABLE.getCode()) {
-                    request.setAttribute("errorInsert", "Une erreur est survenue lors de l'enregistrement de la modification");
+                    request.setAttribute("errorInsertFormResp", "Une erreur est survenue lors de l'enregistrement de la modification");
                     this.doGet(request, response);
                 }
 
-                PreparedStatement preparedStatement = connection.prepareStatement(insertFormRespQuery);
-                preparedStatement.setInt(1, id);
-                preparedStatement.setString(2, nom);
-                preparedStatement.setString(3, prenom);
-                preparedStatement.setString(4, email);
-                preparedStatement.setString(5, password);
-                preparedStatement.setInt(6, codeProfil);
+                PreparedStatement preparedStatement = connection.prepareStatement(updateFormRespQuery);
+                preparedStatement.setString(1, nom);
+                preparedStatement.setString(2, prenom);
+                preparedStatement.setString(3, email);
+                preparedStatement.setString(4, password);
+                preparedStatement.setInt(5, codeProfil);
+                preparedStatement.setInt(6, id);
                 preparedStatement.execute();
 
-                request.setAttribute("warningInsert", null);
-                request.setAttribute("errorInsert", null);
+                request.setAttribute("warningInsertFormResp", null);
+                request.setAttribute("errorInsertFormResp", null);
             }
         } catch (NamingException | SQLException e) {
             e.printStackTrace();
+
         }
+
+        response.sendRedirect("/admin");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
