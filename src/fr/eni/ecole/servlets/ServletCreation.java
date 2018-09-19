@@ -32,6 +32,7 @@ public class ServletCreation extends HttpServlet {
             response.sendRedirect("/erreur");
             return;
         }
+
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource)context.lookup("java:comp/env/jdbc/pool_cnx");

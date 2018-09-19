@@ -62,9 +62,6 @@ public class ConstantesSql {
                                                      "      ,[codeProfil] = ? " +
                                                      " WHERE idUtilisateur = ?";
 
-    /* Themes */
-    public static final String connexionQuery = "SELECT idUtilisateur, nom, prenom, email, password, codeProfil, codePromo FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE email = ?";
-    public static final String getThemeQcm = "SELECT [idTheme],[libelle] FROM [BDD_QCM].[dbo].[THEME]";
     public static final String getCandidat = "SELECT [idUtilisateur]" +
             "      ,[nom]" +
             "      ,[prenom]" +
@@ -74,7 +71,7 @@ public class ConstantesSql {
             "      ,[codePromo]" +
             "  FROM [BDD_QCM].[dbo].[UTILISATEUR] WHERE codeProfil = 1 or codeProfil = 2;";
 
-    public static final String getCandidatPromotion = "SELECT [idUtilisateur]" +
+    public static final String getCandidatByTwoCodePromo = "SELECT [idUtilisateur]" +
             "      ,[nom]" +
             "      ,[prenom]" +
             "      ,[email]" +
@@ -86,35 +83,7 @@ public class ConstantesSql {
             "  ON p.codePromo = u.codePromo" +
             "  WHERE u.codePromo = 1 or u.codePromo = 2;";
 
-    public static final String getTestQCM = "SELECT [idTest]" +
-                                            "      ,[libelle]" +
-                                            "      ,[description]" +
-                                            "      ,[duree]" +
-                                            "      ,[seuil_haut]" +
-                                            "      ,[seuil_bas] " +
-                                            "  FROM [BDD_QCM].[dbo].[TEST]";
-    public static final String getThemeQcmQuery = "SELECT [idTheme],[libelle] FROM [BDD_QCM].[dbo].[THEME]";
-
-    public static final String insertInscription = "INSERT INTO [BDD_QCM].[dbo].[EPREUVE]" +
-            "           ([dateDedutValidite]" +
-            "           ,[dateFinValidite]" +
-            "           ,[tempsEcoule]" +
-            "           ,[etat]" +
-            "           ,[note_obtenue]" +
-            "           ,[niveau_obtenu]" +
-            "           ,[idTest]" +
-            "           ,[idUtilisateur])" +
-            "     VALUES" +
-            "           (?" +
-            "           ,?" +
-            "           ,?" +
-            "           ,?" +
-            "           ,?" +
-            "           ,?" +
-            "           ,?" +
-            "           ,?)";
-
-    public static final String getCandidatCodePromo = "SELECT [idUtilisateur]" +
+    public static final String getCandidatByCodePromo = "SELECT [idUtilisateur]" +
             "      ,[nom]" +
             "      ,[prenom]" +
             "      ,[email]" +
@@ -139,10 +108,46 @@ public class ConstantesSql {
             "           ,?" +
             "           ,?)";
 
+    /* Themes */
+    public static final String getThemeQcm = "SELECT [idTheme],[libelle] FROM [BDD_QCM].[dbo].[THEME]";
+
+    public static final String getThemeQcmQuery = "SELECT [idTheme],[libelle] FROM [BDD_QCM].[dbo].[THEME]";
+
+    /* Tests */
+    public static final String getTestQCM = "SELECT [idTest]" +
+                                            "      ,[libelle]" +
+                                            "      ,[description]" +
+                                            "      ,[duree]" +
+                                            "      ,[seuil_haut]" +
+                                            "      ,[seuil_bas] " +
+                                            "  FROM [BDD_QCM].[dbo].[TEST]";
+
+    /* Inscriptions */
+    public static final String insertInscription = "INSERT INTO [BDD_QCM].[dbo].[EPREUVE]" +
+            "           ([dateDedutValidite]" +
+            "           ,[dateFinValidite]" +
+            "           ,[tempsEcoule]" +
+            "           ,[etat]" +
+            "           ,[note_obtenue]" +
+            "           ,[niveau_obtenu]" +
+            "           ,[idTest]" +
+            "           ,[idUtilisateur])" +
+            "     VALUES" +
+            "           (?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?" +
+            "           ,?)";
+
+    /* Promotions */
     public static final String getPromotion = "SELECT [codePromo]" +
             "      ,[Libelle]" +
             "  FROM [BDD_QCM].[dbo].[PROMOTION]";
 
+    /* Résultats */
     public static final String getResultUser = "SELECT [idEpreuve]" +
             "      ,[dateDedutValidite]" +
             "      ,[dateFinValidite]" +
@@ -156,33 +161,4 @@ public class ConstantesSql {
             "  JOIN [BDD_QCM].[dbo].[TEST] t" +
             "  ON e.idTest = t.idTest" +
             "  WHERE [idUtilisateur] = ?";
-
-    public static final String getOneUser = "SELECT [idUtilisateur]" +
-            "      ,[nom]" +
-            "      ,[prenom]" +
-            "      ,[email]" +
-            "      ,[password]" +
-            "      ,[codeProfil]" +
-            "      ,[codePromo]" +
-            "  FROM [BDD_QCM].[dbo].[UTILISATEUR]" +
-            "  WHERE [idUtilisateur] = ?;";
-    /* Inscriptions */
-    public static final String insertInscription =  "INSERT INTO [BDD_QCM].[dbo].[EPREUVE]" +
-                                                    "           ([dateDedutValidite]" +
-                                                    "           ,[dateFinValidite]" +
-                                                    "           ,[tempsEcoule]" +
-                                                    "           ,[etat]" +
-                                                    "           ,[note_obtenue]" +
-                                                    "           ,[niveau_obtenu]" +
-                                                    "           ,[idTest]" +
-                                                    "           ,[idUtilisateur])" +
-                                                    "     VALUES" +
-                                                    "           (?" +
-                                                    "           ,?" +
-                                                    "           ,?" +
-                                                    "           ,?" +
-                                                    "           ,?" +
-                                                    "           ,?" +
-                                                    "           ,?" +
-                                                    "           ,?)";
 }

@@ -2,27 +2,22 @@ package fr.eni.ecole.servlets;
 
 import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.filter.VerifSession;
-import fr.eni.ecole.repo.Formation;
 import fr.eni.ecole.repo.Utilisateur;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
-import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-import static fr.eni.ecole.constantes.ConstantesSql.getCandidatCodePromo;
-import static fr.eni.ecole.constantes.ConstantesSql.getCandidatPromotion;
+import static fr.eni.ecole.constantes.ConstantesSql.getCandidatByTwoCodePromo;
 
 @WebServlet(name = "ServletResultat", urlPatterns = "/servletResultat")
 public class ServletResultat extends HttpServlet {
@@ -56,7 +51,7 @@ public class ServletResultat extends HttpServlet {
             Statement statement = connection.createStatement();
             
             ArrayList<Utilisateur> listeResultat = new ArrayList<Utilisateur>();
-            ResultSet resultSet = statement.executeQuery(getCandidatPromotion);
+            ResultSet resultSet = statement.executeQuery(getCandidatByTwoCodePromo);
             while (resultSet.next()){
 
                 listeResultat.add(new Utilisateur(resultSet.getInt("idUtilisateur"),

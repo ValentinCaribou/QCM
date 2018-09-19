@@ -71,7 +71,7 @@ public class ServletResultatDetailler extends HttpServlet {
 
             request.setAttribute("listeResultat", listeResultat);
 
-            PreparedStatement getOneCandidat = connection.prepareStatement(getOneUser);
+            PreparedStatement getOneCandidat = connection.prepareStatement(getUserById);
             getOneCandidat.setInt(1, userId);
             ResultSet resultatCandidat = getOneCandidat.executeQuery();
             resultatCandidat.next();

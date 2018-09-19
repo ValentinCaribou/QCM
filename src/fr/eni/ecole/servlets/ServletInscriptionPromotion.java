@@ -2,7 +2,6 @@ package fr.eni.ecole.servlets;
 
 import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.filter.VerifSession;
-import fr.eni.ecole.repo.Test;
 import fr.eni.ecole.repo.Utilisateur;
 
 import javax.naming.Context;
@@ -55,7 +54,7 @@ public class ServletInscriptionPromotion extends HttpServlet {
             System.out.println("Date de fin : " + dateFin);
 
             ArrayList<Utilisateur> listeUtilisateurs = new ArrayList<Utilisateur>();
-            PreparedStatement getCandidat = connection.prepareStatement(getCandidatCodePromo);
+            PreparedStatement getCandidat = connection.prepareStatement(getCandidatByCodePromo);
             getCandidat.setInt(1, PromotiontInt);
             ResultSet resultSetUtilisateurs = getCandidat.executeQuery();
             while (resultSetUtilisateurs.next()){
