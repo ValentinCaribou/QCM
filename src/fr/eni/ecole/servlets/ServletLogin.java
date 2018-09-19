@@ -15,8 +15,6 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-import static fr.eni.ecole.enumRepo.Profil.CANDIDAT_LIBRE;
-
 @WebServlet(name = "ServletLogin", urlPatterns = "/authentification")
 public class ServletLogin extends HttpServlet {
     @Override
@@ -30,6 +28,11 @@ public class ServletLogin extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if(request.getParameter("value") != null) {
+            this.doGet(request, response);
+            return;
+        }
+
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
@@ -57,7 +60,7 @@ public class ServletLogin extends HttpServlet {
             int codeProfil = 0;
 
             if (session.getAttribute("mail") == request.getParameter("mail") && session.getAttribute("password") == request.getParameter("password")){
-                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                this.getServletContext().getRequestDispatcher("/index").forward(request, response);
             }
 
             while(resultSet.next()){
@@ -79,43 +82,42 @@ public class ServletLogin extends HttpServlet {
                 }
             }
 
-
             if (mail.equals(mailBdd) && password.equals(passwordBdd)){
                 request.setAttribute("session", session);
-                for (Profil p : Profil.values()){
-                    if (codeProfil == p.getCode())
-                    {
-                        switch (p){
+
+                // redirection
+                for(Profil p : Profil.values()) {
+                    if(codeProfil == p.getCode()) {
+                        System.out.println(codeProfil);
+                        switch(p) {
                             case CANDIDAT_LIBRE:
                             case STAGIAIRE:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
                             case RESPONSABLE:
-                                this.getServletContext().getRequestDispatcher("/indexResponsable").forward(request, response);
+                                response.sendRedirect("/indexResponsable");
                                 break;
 
                             case FORMATEUR:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
-                                break;
-
-                            case ADMIN:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
                             case CELLULE_RECRUTEMENT:
-                                this.getServletContext().getRequestDispatcher("/formateur").forward(request, response);
+                                response.sendRedirect("/index");
                                 break;
 
+                            case ADMIN:
+                                response.sendRedirect("/index");
+                                break;
                         }
+                        return;
                     }
                 }
+
+                response.sendRedirect("/index");
             }
-
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (NamingException e) {
+        } catch (SQLException | NamingException e) {
             e.printStackTrace();
         }
     }
