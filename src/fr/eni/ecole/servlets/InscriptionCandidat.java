@@ -45,43 +45,66 @@ public class InscriptionCandidat extends HttpServlet {
                 }
             }
 
-            ArrayList<Theme> listeTheme = new ArrayList<Theme>();
-            ResultSet resultSet = statement.executeQuery(getThemeQcm);
-            while (resultSet.next()){
+//            if (request.getParameter("codeProfil") == null)
+//            {
+//                response.sendRedirect("/erreur");
+//                System.out.println("session vide");
+//            } else
+            // request.getSession().getAttribute("codeProfil").equals("3")
+            HttpSession session = request.getSession();
 
-                listeTheme.add(new Theme(resultSet.getInt("idTheme"),
-                        resultSet.getString("libelle")));
-            }
-            request.setAttribute("listeTheme", listeTheme);
+            if (session.getAttribute("codeProfil") != null)
+            {
+                int sessionContenu = (int) session.getAttribute("codeProfil");
+                if (sessionContenu == 3) {
+                    System.out.println("session accepter");
+                    ArrayList<Theme> listeTheme = new ArrayList<Theme>();
+                    ResultSet resultSet = statement.executeQuery(getThemeQcm);
+                    while (resultSet.next()){
 
-            ArrayList<Test> listeTest = new ArrayList<Test>();
-            ResultSet resultSetTest = statement.executeQuery(getTestQCM);
-            while (resultSetTest.next()){
+                        listeTheme.add(new Theme(resultSet.getInt("idTheme"),
+                                resultSet.getString("libelle")));
+                    }
+                    request.setAttribute("listeTheme", listeTheme);
 
-                listeTest.add(new Test(resultSetTest.getInt("idTest"),
-                        resultSetTest.getString("libelle"),
-                        resultSetTest.getString("description"),
-                        resultSetTest.getInt("duree"),
-                        resultSetTest.getInt("seuil_haut"),
-                        resultSetTest.getInt("seuil_bas")));
-            }
-            request.setAttribute("listeTest", listeTest);
+                    ArrayList<Test> listeTest = new ArrayList<Test>();
+                    ResultSet resultSetTest = statement.executeQuery(getTestQCM);
+                    while (resultSetTest.next()){
 
-            ArrayList<Utilisateur> listeUtilisateur = new ArrayList<Utilisateur>();
-            ResultSet resultSetCandidat = statement.executeQuery(getCandidat);
-            while (resultSetCandidat.next()){
+                        listeTest.add(new Test(resultSetTest.getInt("idTest"),
+                                resultSetTest.getString("libelle"),
+                                resultSetTest.getString("description"),
+                                resultSetTest.getInt("duree"),
+                                resultSetTest.getInt("seuil_haut"),
+                                resultSetTest.getInt("seuil_bas")));
+                    }
+                    request.setAttribute("listeTest", listeTest);
 
-                listeUtilisateur.add(new Utilisateur(resultSetCandidat.getInt("idUtilisateur"),
-                        resultSetCandidat.getString("nom"),
-                        resultSetCandidat.getString("prenom"),
-                        resultSetCandidat.getString("email"),
-                        resultSetCandidat.getString("password"),
-                        resultSetCandidat.getInt("codeProfil"),
-                        resultSetCandidat.getString("codePromo")));
-            }
-            request.setAttribute("listeUtilisateur", listeUtilisateur);
+                    ArrayList<Utilisateur> listeUtilisateur = new ArrayList<Utilisateur>();
+                    ResultSet resultSetCandidat = statement.executeQuery(getCandidat);
+                    while (resultSetCandidat.next()){
+
+                        listeUtilisateur.add(new Utilisateur(resultSetCandidat.getInt("idUtilisateur"),
+                                resultSetCandidat.getString("nom"),
+                                resultSetCandidat.getString("prenom"),
+                                resultSetCandidat.getString("email"),
+                                resultSetCandidat.getString("password"),
+                                resultSetCandidat.getInt("codeProfil"),
+                                resultSetCandidat.getString("codePromo")));
+                    }
+                    request.setAttribute("listeUtilisateur", listeUtilisateur);
 //            response.sendRedirect("/inscriptionCandidat");
-            this.getServletContext().getRequestDispatcher("/inscriptionCandidat").forward(request, response);
+                    this.getServletContext().getRequestDispatcher("/inscriptionCandidat").forward(request, response);
+                } else {
+                    response.sendRedirect("/erreur");
+                    System.out.println("session invalide");
+                }
+            } else {
+                response.sendRedirect("/erreur");
+                System.out.println("session invalide");
+            }
+
+
 
         } catch (NamingException | SQLException e) {
             e.printStackTrace();

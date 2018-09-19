@@ -14,16 +14,16 @@
 </head>
 <body>
 <div class="col-lg-12">
-    <jsp:include page="/WEB-INF/header.jsp">
-        <jsp:param name="title" value="TP Web - Liste formation" />
-    </jsp:include>
-</div>
-<div class="row2 bordure3">
-    <div class="col-lg-10">
-        <p class=" alert alert-danger">Erreur votre status ne vous permet pas d'acceder à cette page !</p>
+    <jsp:include page="/WEB-INF/headerNav.jsp" />
+    <div class="col-lg-12">
+        <jsp:include page="/WEB-INF/header.jsp">
+            <jsp:param name="title" value="QCM - Page d'erreur" />
+        </jsp:include>
     </div>
-    <div class="col-lg-2 bordure2">
-        <%@include file="menu.jsp"%>
+    <div class="row2 bordure3">
+        <div class="col-lg-10">
+            <p class=" alert alert-danger">Erreur votre status ne vous permet pas d'acceder à cette page !</p>
+        </div>
     </div>
 </div>
 <p class="eniecole">TP ENI Ecole</p>

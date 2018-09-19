@@ -1,5 +1,8 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
+import fr.eni.ecole.filter.VerifSession;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -17,6 +20,13 @@ import static fr.eni.ecole.constantes.ConstantesSql.insertInscription;
 public class ServletInscriptionCandidat extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        boolean verif = VerifSession.checkSession(Profil.RESPONSABLE.getCode(), request, response);
+
+        if(!verif){
+            response.sendRedirect("/erreur");
+            return;
+        }
+
         try {
             System.out.println("Inscription candidat");
             Context context = new InitialContext();
@@ -47,8 +57,8 @@ public class ServletInscriptionCandidat extends HttpServlet {
             preparedStatement.setString(4, "EA");
             preparedStatement.setNull(5,java.sql.Types.INTEGER);
             preparedStatement.setNull(6, java.sql.Types.INTEGER);
-            preparedStatement.setInt(7, CandidatInt);
-            preparedStatement.setInt(8, TestInt);
+            preparedStatement.setInt(7, TestInt);
+            preparedStatement.setInt(8, CandidatInt);
             preparedStatement.executeUpdate();
 
             response.sendRedirect("/indexResponsable");

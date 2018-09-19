@@ -79,7 +79,7 @@ public class ServletFormation extends HttpServlet {
             File file = new File("test.txt");
             System.out.println("Chemin du fichier : " + file.getAbsolutePath());
             RequestDispatcher requestDispatcher;
-            requestDispatcher = (RequestDispatcher) this.getServletContext().getRequestDispatcher("/WEB-INF/ListeFormation.jsp");
+            requestDispatcher = (RequestDispatcher) this.getServletContext().getRequestDispatcher("/WEB-INF/ListeResultat.jsp");
             requestDispatcher.include(request, response);
 
             connection.close();

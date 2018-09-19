@@ -1,12 +1,14 @@
 <%-- Created by IntelliJ IDEA. --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+  <head class="header">
       <jsp:include page="/WEB-INF/head.jsp">
           <jsp:param name="title" value="QCM - Accueil" />
       </jsp:include>
   </head>
   <body>
+  <div class="col-lg-12">
+    <jsp:include page="/WEB-INF/headerNav.jsp" />
   <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
       <jsp:param name="title" value="QCM - Accueil" />
@@ -22,6 +24,7 @@
       </div>
     </div>
     <p class="eniecole">TP ENI Ecole</p>
+  </div>
   </div>
   </body>
 </html>

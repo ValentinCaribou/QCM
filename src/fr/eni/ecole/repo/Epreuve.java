@@ -9,12 +9,13 @@ public class Epreuve {
     private Date dateFinValidite;
     private int tempsEcoule;
     private String etat;
-    private int note_obtenue;
-    private int niveau_obtenu;
+    private float note_obtenue;
+    private float niveau_obtenu;
     private int idTest;
+    private String nomTest;
     private int idUtilisateur;
 
-    public Epreuve(int idEpreuve, Date dateDebutValidite, Date dateFinValidite, int tempsEcoule, String etat, int note_obtenue, int niveau_obtenu, int idTest, int idUtilisateur) {
+    public Epreuve(int idEpreuve, Date dateDebutValidite, Date dateFinValidite, int tempsEcoule, String etat, float note_obtenue, float niveau_obtenu, int idTest, int idUtilisateur) {
         this.idEpreuve = idEpreuve;
         this.dateDebutValidite = dateDebutValidite;
         this.dateFinValidite = dateFinValidite;
@@ -24,6 +25,34 @@ public class Epreuve {
         this.niveau_obtenu = niveau_obtenu;
         this.idTest = idTest;
         this.idUtilisateur = idUtilisateur;
+    }
+
+    public Epreuve(int idEpreuve, Date dateDebutValidite, Date dateFinValidite, int tempsEcoule, String etat, float note_obtenue, float niveau_obtenu, String nomTest, int idUtilisateur) {
+        this.idEpreuve = idEpreuve;
+        this.dateDebutValidite = dateDebutValidite;
+        this.dateFinValidite = dateFinValidite;
+        this.tempsEcoule = tempsEcoule;
+        this.etat = etat;
+        this.note_obtenue = note_obtenue;
+        this.niveau_obtenu = niveau_obtenu;
+        this.nomTest = nomTest;
+        this.idUtilisateur = idUtilisateur;
+    }
+
+    public void setNote_obtenue(float note_obtenue) {
+        this.note_obtenue = note_obtenue;
+    }
+
+    public void setNiveau_obtenu(float niveau_obtenu) {
+        this.niveau_obtenu = niveau_obtenu;
+    }
+
+    public String getNomTest() {
+        return nomTest;
+    }
+
+    public void setNomTest(String nomTest) {
+        this.nomTest = nomTest;
     }
 
     public int getIdEpreuve() {
@@ -66,7 +95,7 @@ public class Epreuve {
         this.etat = etat;
     }
 
-    public int getNote_obtenue() {
+    public float getNote_obtenue() {
         return note_obtenue;
     }
 
@@ -74,7 +103,7 @@ public class Epreuve {
         this.note_obtenue = note_obtenue;
     }
 
-    public int getNiveau_obtenu() {
+    public float getNiveau_obtenu() {
         return niveau_obtenu;
     }
 

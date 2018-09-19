@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="fr.eni.ecole.repo.Utilisateur" %>
 <%@ page import="fr.eni.ecole.repo.Test" %>
+<%@ page import="fr.eni.ecole.repo.Promotion" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrateur
@@ -24,27 +25,26 @@
         </jsp:include>
         <div class="row2 bordure3">
             <div class="col-lg-6 offset-lg-3">
-                <form method="post" class="label-strong" action="${pageContext.request.contextPath}/servletInscriptionCandidat">
+                <form method="post" class="label-strong" action="${pageContext.request.contextPath}/servletInscriptionPromotion">
                     <%--<h5 class="text">Inscription d'un candidat/Stagiaire</h5>--%>
                 <br>
                     <div class="col-lg-12">
-                        <label for="listeUtilisateur">Liste des candidat :</label>
-                        <select class="form-control" class="form-control" id="listeUtilisateur" name="Utilisateur">
-                            <% ArrayList<Utilisateur> listeUtilisateurs = (ArrayList<Utilisateur>) request.getAttribute("listeUtilisateur");%>
-                            <% for(Utilisateur listeUtilisateur : listeUtilisateurs){
+                        <label for="listePromotion">Liste des promotions :</label>
+                        <select class="form-control" id="listePromotion" name="Promotion">
+                            <% ArrayList<Promotion> listePromotions = (ArrayList<Promotion>) request.getAttribute("listePromotion");%>
+                            <% for(Promotion listePromotion : listePromotions){
                             %>
-                            <option value="<%=listeUtilisateur.getIdUtilisateur()%>"><%=listeUtilisateur.getNom() + " " + listeUtilisateur.getPrenom()%></option>
+                            <option value="<%=listePromotion.getCodePromo()%>"><%=listePromotion.getLibelle()%></option>
                             <%
                                 }
                             %>
                         </select>
-                        </br>
+                        <br/>
                     </div>
                     </br>
                     <div class="col-lg-12">
                         <label for="listeTest">Liste des Tests :</label>
-                        </br>
-                        <select class="form-control" class="form-control" id="listeTest" name="Test">
+                        <select class="form-control" id="listeTest" name="Test">
                             <% ArrayList<Test> listeTests = (ArrayList<Test>) request.getAttribute("listeTest");%>
                             <% for(Test listeTest : listeTests){
                             %>
@@ -53,17 +53,17 @@
                                 }
                             %>
                         </select>
-                        </br>
+                        <br/>
                     </div>
                     </br>
-                    <div class="col-lg-12">
+                     <div class="col-lg-12">
                     <label for="dateDebut">Choisir la date de début : </label>
-                    </br>
-                        <input class="form-control" id="dateDebut" type="date" name="dateDebut">
+                    <br/>
+                        <input class="form-control" type="date" name="dateDebut" id="dateDebut">
                     </br>
                     <label for="dateFin">Choisir la date de fin : </label>
+                        <input class="form-control" class="dateTime" type="date" name="dateFin" id="dateFin">
                     </br>
-                        <input class="form-control" class="dateTime" id="dateFin" type="date" name="dateFin">
                 </br>
                     <input type="submit" class="btn btn-outline-primary btn-form-candidat" value="Valider">
                 </div>
