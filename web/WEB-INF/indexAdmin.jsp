@@ -1,7 +1,8 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="fr.eni.ecole.repo.Formation" %>
 <%@ page import="fr.eni.ecole.repo.FormRespDto" %>
-<%@ page import="fr.eni.ecole.enumRepo.Profil" %><%--
+<%@ page import="fr.eni.ecole.enumRepo.Profil" %>
+<%@ page import="java.util.logging.Logger" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 02/07/2018
@@ -25,6 +26,8 @@
             <%
                 String warning = (String)request.getAttribute("warningInsert");
                 String error = (String)request.getAttribute("errorInsert");
+
+                ArrayList<String> logs = request.getAttribute("logs") != null ? (ArrayList<String>) request.getAttribute("logs") : new ArrayList<>();
             %>
             <div class="col-lg-6">
                 <div class="col-lg-12 bordure">
@@ -50,7 +53,7 @@
                     <h3>Créer un formateur / responsable de formations</h3>
                     <form action="${pageContext.request.contextPath}/admin/create" method="post" class="label-strong">
                         <label for="userName">Nom : </label>
-                        <input class="form-control" name="nom" id="userName" type="text">
+                        <input class="form-control" name="nom" id="userName" type="text">a
                         <label for="userFirstName">Prénom : </label>
                         <input class="form-control" name="prenom" id="userFirstName" type="text">
                         <label for="userEmail">Mail : </label>
@@ -74,7 +77,13 @@
                 <div class="col-lg-12">
                     <h3>Logs d'incidents</h3>
                     <div style="overflow: scroll; height: 250px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        <%
+                            for(String log : logs) {
+                        %>
+                        <span><%=log%></span>
+                        <%
+                            }
+                        %>
                     </div>
                 </div>
             </div>

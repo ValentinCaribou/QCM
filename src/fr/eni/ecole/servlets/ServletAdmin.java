@@ -49,8 +49,6 @@ public class ServletAdmin extends HttpServlet {
                         )
                 );
             }
-            Logger logger = Logger.getLogger(this.getServletName());
-            logger.info("test");
 
             request.setAttribute("users", utilisateurs);
 

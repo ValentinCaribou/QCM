@@ -50,24 +50,20 @@
             <%
                 }
             %>
-            <h3>Modification du formateur / responsable de formations</h3>
+            <h3>Modification du formateur / responsable de formations</h3><br/>
             <form action="${pageContext.request.contextPath}/admin/update" method="post" class="label-strong">
                 <label for="userName">Nom : </label>
-                <input class="form-control" name="userName" value="<%=nom%>" id="userName" type="text">
+                <input class="form-control" name="userName" value="<%=nom%>" id="userName" type="text"><br/>
                 <label for="userFirstName">Prénom : </label>
-                <input class="form-control" name="userFirstName" value="<%=prenom%>" id="userFirstName" type="text">
+                <input class="form-control" name="userFirstName" value="<%=prenom%>" id="userFirstName" type="text"><br/>
                 <label for="userEmail">Mail : </label>
-                <input class="form-control" name="userEmail" value="<%=email%>" id="userEmail" type="email">
+                <input class="form-control" name="userEmail" value="<%=email%>" id="userEmail" type="email"><br/>
                 <label for="userPassword">Mot de passe : </label>
-                <input class="form-control" name="userPassword" value="<%=password%>" id="userPassword" type="password">
+                <input class="form-control" name="userPassword" value="<%=password%>" id="userPassword" type="password"><br/>
                 <div class="col-lg-4 offset-lg-4 align-items-md-center">
-                    <span>Profil : </span>
-                    <label class="radio-inline">
-                        <input type="radio" name="codeProfil" value="<%=Profil.FORMATEUR.getCode()%>" <%=codeProfil == Profil.FORMATEUR.getCode() ? "checked" : "" %> > <%=Profil.FORMATEUR.toString().toLowerCase()%>
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="codeProfil" value="<%=Profil.RESPONSABLE.getCode()%>" <%=codeProfil == Profil.RESPONSABLE.getCode() ? "checked" : "" %> > <%=Profil.RESPONSABLE.toString().toLowerCase()%>
-                    </label>
+                    <label>Profil : </label>
+                    <input type="radio" name="codeProfil" value="<%=Profil.FORMATEUR.getCode()%>" <%=codeProfil == Profil.FORMATEUR.getCode() ? "checked" : "" %> /> <%=Profil.FORMATEUR.toString().toLowerCase()%>
+                    <input type="radio" name="codeProfil" value="<%=Profil.RESPONSABLE.getCode()%>" <%=codeProfil == Profil.RESPONSABLE.getCode() ? "checked" : "" %> /> <%=Profil.RESPONSABLE.toString().toLowerCase()%>
                 </div>
                 <input type="hidden" name="id" value="<%=id%>"/>
                 <br/>
