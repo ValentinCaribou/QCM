@@ -39,6 +39,13 @@
         <url-pattern>/indexResponsable</url-pattern>
     </servlet-mapping>
 
+    <!--<filter-mapping>-->
+        <!--<filter-name>Filter</filter-name> &lt;!&ndash; mandatory &ndash;&gt;-->
+        <!--<url-pattern>/*</url-pattern> &lt;!&ndash; either url-pattern or servlet-name is mandatory &ndash;&gt;-->
+        <!--<servlet-name>ServletLogin</servlet-name>-->
+        <!--<dispatcher>REQUEST</dispatcher>-->
+    <!--</filter-mapping>-->
+
     <servlet>
         <servlet-name>InscriptionCandidat</servlet-name>
         <jsp-file>/WEB-INF/InscrireUnCandidat.jsp</jsp-file>

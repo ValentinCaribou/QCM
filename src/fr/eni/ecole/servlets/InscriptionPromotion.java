@@ -1,16 +1,15 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
+import fr.eni.ecole.filter.VerifSession;
 import fr.eni.ecole.repo.Promotion;
 import fr.eni.ecole.repo.Test;
-import fr.eni.ecole.repo.Theme;
-import fr.eni.ecole.repo.Utilisateur;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -39,6 +38,13 @@ public class InscriptionPromotion extends HttpServlet {
             Connection connection = dataSource.getConnection();
 
             Statement statement = connection.createStatement();
+
+            boolean verif = VerifSession.checkSession(Profil.RESPONSABLE.getCode(), request, response);
+
+            if(!verif){
+                response.sendRedirect("/erreur");
+                return;
+            }
 
             ArrayList<Test> listeTest = new ArrayList<Test>();
             ResultSet resultSetTest = statement.executeQuery(getTestQCM);

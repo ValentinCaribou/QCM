@@ -9,9 +9,9 @@
 <div class="row">
     <nav class="navbar navbar-dark bg-dark NavBar">
         <div class="col-lg-8">
-            <h1 class="navbar-brand" href="${pageContext.request.contextPath}/index">QCM</h1>
+            <a class="navbar-brand" href="${pageContext.request.contextPath}/index"><strong>QCM</strong></a>
 
-            <a class="navbar-brand textSize" href="${pageContext.request.contextPath}/traitementInscription">Liste des epreuves</a>
+            <%--<a class="navbar-brand textSize" href="${pageContext.request.contextPath}/traitementInscription">Liste des epreuves</a>--%>
         </div>
         <div class="offset-lg-1 col-lg-3 row">
             <%

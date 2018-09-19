@@ -1,5 +1,7 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
+import fr.eni.ecole.filter.VerifSession;
 import fr.eni.ecole.repo.Formation;
 import fr.eni.ecole.repo.Utilisateur;
 
@@ -39,6 +41,12 @@ public class ServletResultat extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        boolean verif = VerifSession.checkSession(Profil.RESPONSABLE.getCode(), request, response);
+
+        if(!verif){
+            response.sendRedirect("/erreur");
+            return;
+        }
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource)context.lookup("java:comp/env/jdbc/pool_cnx");

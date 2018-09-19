@@ -19,9 +19,6 @@
         <p class="text">Accèdez à toutes les fonctionnalités qui vous sont autorisées en vous rendant sur votre page rubrique d'accès (animateur ou stagiaire)</p>
         <p class="text">Pour faire une recherche sur Google, utiliser le formulaire de recherche.</p>
       </div>
-      <div class="col-lg-2 bordure2">
-        <%@include file="menu.jsp"%>
-      </div>
     </div>
     <p class="eniecole">TP ENI Ecole</p>
   </div>

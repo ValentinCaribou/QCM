@@ -1,5 +1,7 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
+import fr.eni.ecole.filter.VerifSession;
 import fr.eni.ecole.repo.Test;
 import fr.eni.ecole.repo.Theme;
 import fr.eni.ecole.repo.Utilisateur;
@@ -24,11 +26,18 @@ import static fr.eni.ecole.constantes.ConstantesSql.*;
 public class ServletCreation extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        boolean verif = VerifSession.checkSession(Profil.RESPONSABLE.getCode(), request, response);
+
+        if(!verif){
+            response.sendRedirect("/erreur");
+            return;
+        }
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource)context.lookup("java:comp/env/jdbc/pool_cnx");
 
             Connection connection = dataSource.getConnection();
+
 
             System.out.println("InscriptionCandidat");
 

@@ -1,5 +1,7 @@
 package fr.eni.ecole.servlets;
 
+import fr.eni.ecole.enumRepo.Profil;
+import fr.eni.ecole.filter.VerifSession;
 import fr.eni.ecole.repo.Test;
 import fr.eni.ecole.repo.Utilisateur;
 
@@ -20,6 +22,12 @@ import static fr.eni.ecole.constantes.ConstantesSql.*;
 public class ServletInscriptionPromotion extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        boolean verif = VerifSession.checkSession(Profil.RESPONSABLE.getCode(), request, response);
+
+        if(!verif){
+            response.sendRedirect("/erreur");
+            return;
+        }
         try {
             System.out.println("Inscription Promotion");
             Context context = new InitialContext();
