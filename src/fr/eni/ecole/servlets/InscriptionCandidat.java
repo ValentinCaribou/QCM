@@ -1,6 +1,5 @@
 package fr.eni.ecole.servlets;
 
-import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.*;
 
 import javax.naming.Context;
@@ -14,7 +13,9 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 
-import static fr.eni.ecole.constantes.ConstantesSql.*;
+import static fr.eni.ecole.constantes.ConstantesSql.getCandidat;
+import static fr.eni.ecole.constantes.ConstantesSql.getTestQCM;
+import static fr.eni.ecole.constantes.ConstantesSql.getThemeQcm;
 
 @WebServlet(name = "TraitementInscription", urlPatterns = "/traitementInscription")
 public class InscriptionCandidat extends HttpServlet {
@@ -44,27 +45,40 @@ public class InscriptionCandidat extends HttpServlet {
                 }
             }
 
-            ArrayList<Theme> listeTheme = new ArrayList<Theme>();
-            ResultSet resultSet = statement.executeQuery(getThemeQcmQuery);
-            while (resultSet.next()){
+//            if (request.getParameter("codeProfil") == null)
+//            {
+//                response.sendRedirect("/erreur");
+//                System.out.println("session vide");
+//            } else
+            // request.getSession().getAttribute("codeProfil").equals("3")
+            HttpSession session = request.getSession();
 
-                listeTheme.add(new Theme(resultSet.getInt("idTheme"),
-                        resultSet.getString("libelle")));
-            }
-            request.setAttribute("listeTheme", listeTheme);
+            if (session.getAttribute("codeProfil") != null)
+            {
+                int sessionContenu = (int) session.getAttribute("codeProfil");
+                if (sessionContenu == 3) {
+                    System.out.println("session accepter");
+                    ArrayList<Theme> listeTheme = new ArrayList<Theme>();
+                    ResultSet resultSet = statement.executeQuery(getThemeQcm);
+                    while (resultSet.next()){
 
-            ArrayList<Test> listeTest = new ArrayList<Test>();
-            ResultSet resultSetTest = statement.executeQuery(getTestQCM);
-            while (resultSetTest.next()){
+                        listeTheme.add(new Theme(resultSet.getInt("idTheme"),
+                                resultSet.getString("libelle")));
+                    }
+                    request.setAttribute("listeTheme", listeTheme);
 
-                listeTest.add(new Test(resultSetTest.getInt("idTest"),
-                        resultSetTest.getString("libelle"),
-                        resultSetTest.getString("description"),
-                        resultSetTest.getInt("duree"),
-                        resultSetTest.getInt("seuil_haut"),
-                        resultSetTest.getInt("seuil_bas")));
-            }
-            request.setAttribute("listeTest", listeTest);
+                    ArrayList<Test> listeTest = new ArrayList<Test>();
+                    ResultSet resultSetTest = statement.executeQuery(getTestQCM);
+                    while (resultSetTest.next()){
+
+                        listeTest.add(new Test(resultSetTest.getInt("idTest"),
+                                resultSetTest.getString("libelle"),
+                                resultSetTest.getString("description"),
+                                resultSetTest.getInt("duree"),
+                                resultSetTest.getInt("seuil_haut"),
+                                resultSetTest.getInt("seuil_bas")));
+                    }
+                    request.setAttribute("listeTest", listeTest);
 
             ArrayList<Utilisateur> listeUtilisateur = new ArrayList<Utilisateur>();
 
@@ -74,17 +88,27 @@ public class InscriptionCandidat extends HttpServlet {
             ResultSet resultSetCandidat = preparedStatement.executeQuery();
             while (resultSetCandidat.next()){
 
-                listeUtilisateur.add(new Utilisateur(resultSetCandidat.getInt("idUtilisateur"),
-                        resultSetCandidat.getString("nom"),
-                        resultSetCandidat.getString("prenom"),
-                        resultSetCandidat.getString("email"),
-                        resultSetCandidat.getString("password"),
-                        resultSetCandidat.getInt("codeProfil"),
-                        resultSetCandidat.getString("codePromo")));
-            }
-            request.setAttribute("listeUtilisateur", listeUtilisateur);
+                        listeUtilisateur.add(new Utilisateur(resultSetCandidat.getInt("idUtilisateur"),
+                                resultSetCandidat.getString("nom"),
+                                resultSetCandidat.getString("prenom"),
+                                resultSetCandidat.getString("email"),
+                                resultSetCandidat.getString("password"),
+                                resultSetCandidat.getInt("codeProfil"),
+                                resultSetCandidat.getString("codePromo")));
+                    }
+                    request.setAttribute("listeUtilisateur", listeUtilisateur);
 //            response.sendRedirect("/inscriptionCandidat");
-            this.getServletContext().getRequestDispatcher("/inscriptionCandidat").forward(request, response);
+                    this.getServletContext().getRequestDispatcher("/inscriptionCandidat").forward(request, response);
+                } else {
+                    response.sendRedirect("/erreur");
+                    System.out.println("session invalide");
+                }
+            } else {
+                response.sendRedirect("/erreur");
+                System.out.println("session invalide");
+            }
+
+
 
         } catch (NamingException | SQLException e) {
             e.printStackTrace();

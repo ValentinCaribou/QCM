@@ -40,6 +40,37 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>InscriptionPromotion</servlet-name>
+        <jsp-file>/WEB-INF/InscrireUnePromotion.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InscriptionPromotion</servlet-name>
+        <url-pattern>/inscriptionPromotion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Resultat</servlet-name>
+        <jsp-file>/WEB-INF/ListeResultat.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Resultat</servlet-name>
+        <url-pattern>/resultat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResultatDetail</servlet-name>
+        <jsp-file>/WEB-INF/ListeResultatDetail.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ResultatDetail</servlet-name>
+        <url-pattern>/resultatDetail</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
         <servlet-name>Erreur</servlet-name>
         <jsp-file>/WEB-INF/ErrorPages.jsp</jsp-file>
     </servlet>
@@ -88,6 +119,17 @@
         <servlet-name>UpdateFormResp</servlet-name>
         <url-pattern>/updatePage</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreationCandidat</servlet-name>
+        <jsp-file>/WEB-INF/creationCandidat.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CreationCandidat</servlet-name>
+        <url-pattern>/creationCandidat</url-pattern>
+    </servlet-mapping>
+
 
     <session-config>
         <session-timeout>10</session-timeout>
