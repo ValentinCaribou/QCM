@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="BDD_QCM" uuid="4373c4de-19c5-4d35-870b-17e7880dbe9b">
+    <data-source name="BDD_QCM" uuid="72339ec6-67ac-41e5-ad99-77a8105c16f4">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MSSQL" exact-version="0.0" />
     </data-source>
   </component>

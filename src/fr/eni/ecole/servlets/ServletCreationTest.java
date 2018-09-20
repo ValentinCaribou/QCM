@@ -22,10 +22,12 @@ public class ServletCreationTest extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //recuperation des champs
-        String enonce = request.getParameter("enonce");
-        String media = request.getParameter("media");
-        int points = Integer.parseInt(request.getParameter("points"));
-        int idTheme = Integer.parseInt(request.getParameter("idTheme"));
+
+        String libelle =request.getParameter("libelle");
+        String description = request.getParameter("description");
+        int duree = Integer.parseInt(request.getParameter("duree"));
+        int seuil_haut = Integer.parseInt(request.getParameter("seuil_haut"));
+        int seuil_bas = Integer.parseInt(request.getParameter("seuil_bas"));
 
         try{
             Context context = new InitialContext();
@@ -33,11 +35,12 @@ public class ServletCreationTest extends HttpServlet {
             Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement();
 
-            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.questionCreate);
-            preparedStatement.setString(1,enonce);
-            preparedStatement.setString(2, media);
-            preparedStatement.setInt(3, points);
-            preparedStatement.setInt(4, idTheme);
+            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.testCreate);
+            preparedStatement.setString(1,libelle);
+            preparedStatement.setString(2,description);
+            preparedStatement.setInt(3, duree);
+            preparedStatement.setInt(4, seuil_haut);
+            preparedStatement.setInt(5, seuil_bas);
             preparedStatement.executeUpdate();
 
             this.doGet(request,response);
