@@ -1,4 +1,5 @@
-<%@ page import="fr.eni.ecole.enumRepo.Profil" %><%--
+<%@ page import="fr.eni.ecole.enumRepo.Profil" %>
+<%@ page import="fr.eni.ecole.filter.VerifSession" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 02/07/2018
@@ -6,6 +7,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    boolean verif = VerifSession.checkSession(Profil.ADMIN.getCode(), request, response);
+
+    if(!verif){
+        response.sendRedirect("/erreur");
+        return;
+    }
+%>
 <html>
     <head>
         <jsp:include page="/WEB-INF/head.jsp">
@@ -13,6 +22,7 @@
         </jsp:include>
     </head>
     <body>
+        <jsp:include page="/WEB-INF/headerNavAdmin.jsp" />
         <div class="col-lg-12">
             <jsp:include page="/WEB-INF/header.jsp">
                 <jsp:param name="title" value="Section administration" />

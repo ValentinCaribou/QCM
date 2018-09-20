@@ -90,6 +90,17 @@
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
 
+
+    <servlet>
+        <servlet-name>IdentificationAnimateur</servlet-name>
+        <jsp-file>/WEB-INF/identificationAnim.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IdentificationAnimateur</servlet-name>
+        <url-pattern>/identificationAnimateur</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>Login</servlet-name>
         <jsp-file>/WEB-INF/login.jsp</jsp-file>
@@ -129,7 +140,6 @@
         <servlet-name>CreationCandidat</servlet-name>
         <url-pattern>/creationCandidat</url-pattern>
     </servlet-mapping>
-
 
     <session-config>
         <session-timeout>10</session-timeout>

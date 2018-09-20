@@ -35,8 +35,6 @@ public class ServletFormation extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        System.out.println("test");
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource)context.lookup("java:comp/env/jdbc/pool_cnx");

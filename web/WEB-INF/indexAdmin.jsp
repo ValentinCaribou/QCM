@@ -2,7 +2,8 @@
 <%@ page import="fr.eni.ecole.repo.Formation" %>
 <%@ page import="fr.eni.ecole.repo.FormRespDto" %>
 <%@ page import="fr.eni.ecole.enumRepo.Profil" %>
-<%@ page import="java.util.logging.Logger" %><%--
+<%@ page import="java.util.logging.Logger" %>
+<%@ page import="fr.eni.ecole.filter.VerifSession" %><%--
   Created by IntelliJ IDEA.
   User: Administrateur
   Date: 02/07/2018
@@ -10,6 +11,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    boolean verif = VerifSession.checkSession(Profil.ADMIN.getCode(), request, response);
+
+    if(!verif){
+        response.sendRedirect("/erreur");
+        return;
+    }
+%>
 <html>
     <head>
         <jsp:include page="/WEB-INF/head.jsp">
@@ -17,6 +26,7 @@
         </jsp:include>
     </head>
     <body>
+        <jsp:include page="/WEB-INF/headerNavAdmin.jsp" />
         <div class="col-lg-12">
             <jsp:include page="/WEB-INF/header.jsp">
                 <jsp:param name="title" value="Section administration" />
@@ -27,7 +37,7 @@
                 String warning = (String)request.getAttribute("warningInsert");
                 String error = (String)request.getAttribute("errorInsert");
 
-                ArrayList<String> logs = request.getAttribute("logs") != null ? (ArrayList<String>) request.getAttribute("logs") : new ArrayList<>();
+//                ArrayList<String> logs = request.getAttribute("logs") != null ? (ArrayList<String>) request.getAttribute("logs") : new ArrayList<>();
             %>
             <div class="col-lg-6">
                 <div class="col-lg-12 bordure">
@@ -53,7 +63,7 @@
                     <h3>Créer un formateur / responsable de formations</h3>
                     <form action="${pageContext.request.contextPath}/admin/create" method="post" class="label-strong">
                         <label for="userName">Nom : </label>
-                        <input class="form-control" name="nom" id="userName" type="text">a
+                        <input class="form-control" name="nom" id="userName" type="text">
                         <label for="userFirstName">Prénom : </label>
                         <input class="form-control" name="prenom" id="userFirstName" type="text">
                         <label for="userEmail">Mail : </label>
@@ -61,13 +71,9 @@
                         <label for="userPassword">Mot de passe : </label>
                         <input class="form-control" name="password" id="userPassword" type="password">
                         <div class="col-lg-4 offset-lg-4 align-items-md-center">
-                            <span>Profil : </span>
-                            <label class="radio-inline">
-                                <input type="radio" name="choixFormResp" value="<%=Profil.FORMATEUR.getCode()%>" checked> <%=Profil.FORMATEUR.toString().toLowerCase()%>
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="choixFormResp" value="<%=Profil.RESPONSABLE.getCode()%>"> <%=Profil.RESPONSABLE.toString().toLowerCase()%>
-                            </label>
+                            <label>Profil : </label>
+                            <input type="radio" name="choixFormResp" value="<%=Profil.FORMATEUR.getCode()%>" checked /> <%=Profil.FORMATEUR.toString().toLowerCase()%>
+                            <input type="radio" name="choixFormResp" value="<%=Profil.RESPONSABLE.getCode()%>" /> <%=Profil.RESPONSABLE.toString().toLowerCase()%>
                         </div>
                         <br/>
                         <button class="btn btn-primary" type="submit">Valider</button>
@@ -76,14 +82,14 @@
                 </div>
                 <div class="col-lg-12">
                     <h3>Logs d'incidents</h3>
-                    <div style="overflow: scroll; height: 250px;">
-                        <%
-                            for(String log : logs) {
-                        %>
-                        <span><%=log%></span>
-                        <%
-                            }
-                        %>
+                    <div style="overflow: scroll; height: 240px;">
+                        <%--<%--%>
+                            <%--for(String log : logs) {--%>
+                        <%--%>--%>
+                        <%--<span><%=log%></span>--%>
+                        <%--<%--%>
+                            <%--}--%>
+                        <%--%>--%>
                     </div>
                 </div>
             </div>

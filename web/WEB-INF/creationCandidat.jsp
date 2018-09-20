@@ -25,33 +25,33 @@
                 <form method="post" class="label-strong" action="${pageContext.request.contextPath}/creationCompte">
                 <br>
                     <label for="nom">Nom : </label>
-                    <input class="form-control" type="text" name="nom" placeholder="nom" id="nom"></br>
+                    <input class="form-control" type="text" name="nom" placeholder="nom" id="nom"><br/>
                     <label for="prenom">Prenom : </label>
-                    <input class="form-control" type="text" name="prenom" placeholder="prenom" id="prenom"></br>
+                    <input class="form-control" type="text" name="prenom" placeholder="prenom" id="prenom"><br/>
                     <label for="email">Email : </label>
-                    <input class="form-control" type="text" name="email" placeholder="email" id="email"></br>
+                    <input class="form-control" type="text" name="email" placeholder="email" id="email"><br/>
                     <label for="password">Mot de passe : </label>
                     <input class="form-control" type="password" name="password" id="password"><br>
                     <label>Type de candidat : </label><br/>
                     <div>
                         <div class="radio">
-                            <input type="radio" name="valueUser" value="<%=Profil.CANDIDAT_LIBRE.getCode()%>"> Candidat libre
+                            <input type="radio" name="valueUser" value="<%=Profil.CANDIDAT_LIBRE.getCode()%>" /> Candidat libre
                         </div>
                         <div class="radio">
-                            <input type="radio" name="valueUser" value="<%=Profil.STAGIAIRE.getCode()%>"> Stagiaire
+                            <input type="radio" name="valueUser" value="<%=Profil.STAGIAIRE.getCode()%>" /> Stagiaire
                         </div>
                     </div>
                     </br>
                     <label>Année en cours : </label><br/>
                     <div>
                         <div class="radio">
-                            <input type="radio" name="valuePromo" value="1"> 1ère Année
+                            <input type="radio" name="valuePromo" value="1" /> 1ère Année
                         </div>
                         <div class="radio">
-                            <input type="radio" name="valuePromo" value="2"> 2ème Année
+                            <input type="radio" name="valuePromo" value="2" /> 2ème Année
                         </div>
                         <div class="radio">
-                            <input type="radio" name="valuePromo" value="3"> 3ème Année
+                            <input type="radio" name="valuePromo" value="3" /> 3ème Année
                         </div>
                     </div>
                     </br>
