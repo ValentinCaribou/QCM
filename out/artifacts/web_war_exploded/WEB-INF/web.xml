@@ -139,8 +139,6 @@
         <jsp-file>/WEB-INF/gestionTheme.jsp</jsp-file>
     </servlet>
 
-
-
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>

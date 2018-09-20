@@ -8,6 +8,15 @@ public class question {
     private int points;
     private int idTheme;
 
+    public question(int idQuestion, String enonce, String media, int points, int idTheme) {
+        this.enonce = enonce;
+        this.media = media;
+        this.points = points;
+        this.idTheme = idTheme;
+
+
+    }
+
     public int getIdQuestion() {
         return idQuestion;
     }
@@ -48,13 +57,5 @@ public class question {
         this.idTheme = idTheme;
     }
 
-    public question(int idQuestion, String enonce, String media, int points, int idTheme) {
-        this.idQuestion = idQuestion;
-        this.enonce = enonce;
-        this.media = media;
-        this.points = points;
-        this.idTheme = idTheme;
 
-
-    }
 }
