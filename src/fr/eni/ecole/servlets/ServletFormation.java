@@ -35,8 +35,6 @@ public class ServletFormation extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        System.out.println("test");
         try {
             Context context = new InitialContext();
             DataSource dataSource = (DataSource)context.lookup("java:comp/env/jdbc/pool_cnx");
@@ -79,7 +77,7 @@ public class ServletFormation extends HttpServlet {
             File file = new File("test.txt");
             System.out.println("Chemin du fichier : " + file.getAbsolutePath());
             RequestDispatcher requestDispatcher;
-            requestDispatcher = (RequestDispatcher) this.getServletContext().getRequestDispatcher("/WEB-INF/ListeFormation.jsp");
+            requestDispatcher = (RequestDispatcher) this.getServletContext().getRequestDispatcher("/WEB-INF/ListeResultat.jsp");
             requestDispatcher.include(request, response);
 
             connection.close();

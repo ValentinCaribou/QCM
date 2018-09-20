@@ -8,6 +8,15 @@ public class Test {
      private int seuil_haut;
      private int seuil_bas;
 
+    public Test(int idTest, String libelle, String description, int duree, int seuil_haut, int seuil_bas) {
+        this.idTest = idTest;
+        this.libelle = libelle;
+        this.description = description;
+        this.duree = duree;
+        this.seuil_haut = seuil_haut;
+        this.seuil_bas = seuil_bas;
+    }
+
     public Test(String libelle, String description, int duree, int seuil_haut, int seuil_bas) {
         this.libelle = libelle;
         this.description = description;
