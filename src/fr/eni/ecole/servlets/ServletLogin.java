@@ -1,6 +1,5 @@
 package fr.eni.ecole.servlets;
 
-import fr.eni.ecole.constantes.ConstantesSql;
 import fr.eni.ecole.enumRepo.Profil;
 import fr.eni.ecole.repo.User;
 
@@ -14,6 +13,8 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
+
+import static fr.eni.ecole.constantes.ConstantesSql.connectionQuery;
 
 @WebServlet(name = "ServletLogin", urlPatterns = "/authentification")
 public class ServletLogin extends HttpServlet {
@@ -35,7 +36,9 @@ public class ServletLogin extends HttpServlet {
 
         try {
             Context context = new InitialContext();
+
             DataSource dataSource = (DataSource) context.lookup("java:comp/env/jdbc/pool_cnx");
+
             Connection connection = dataSource.getConnection();
             Statement statement = connection.createStatement();
 
@@ -48,7 +51,7 @@ public class ServletLogin extends HttpServlet {
             String mail = (String) request.getParameter("mail");
             String password = (String) request.getParameter("password");
 
-            PreparedStatement preparedStatement = connection.prepareStatement(ConstantesSql.connexionQuery);
+            PreparedStatement preparedStatement = connection.prepareStatement(connectionQuery);
             preparedStatement.setString(1, mail);
             ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -59,7 +62,7 @@ public class ServletLogin extends HttpServlet {
             String codePromo = null;
             int codeProfil = 0;
 
-            if (session.getAttribute("mail") == request.getParameter("mail")){
+            if (session.getAttribute("mail") == request.getParameter("mail") && session.getAttribute("password") == request.getParameter("password")){
                 this.getServletContext().getRequestDispatcher("/index").forward(request, response);
             }
 
@@ -88,7 +91,6 @@ public class ServletLogin extends HttpServlet {
                 // redirection
                 for(Profil p : Profil.values()) {
                     if(codeProfil == p.getCode()) {
-                        System.out.println(codeProfil);
                         switch(p) {
                             case CANDIDAT_LIBRE:
                             case STAGIAIRE:
@@ -96,7 +98,7 @@ public class ServletLogin extends HttpServlet {
                                 break;
 
                             case RESPONSABLE:
-                                response.sendRedirect("/index");
+                                response.sendRedirect("/indexResponsable");
                                 break;
 
                             case FORMATEUR:
@@ -108,7 +110,7 @@ public class ServletLogin extends HttpServlet {
                                 break;
 
                             case ADMIN:
-                                response.sendRedirect("/index");
+                                response.sendRedirect("/admin");
                                 break;
                         }
                         return;

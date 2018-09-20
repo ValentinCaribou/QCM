@@ -16,11 +16,11 @@
 <body>
 <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
-        <jsp:param name="title" value="TP Web - Acces Stagiaire" />
+        <jsp:param name="title" value="Connexion" />
     </jsp:include>
     <div class="row2 bordure3">
         <div class="col-lg-10">
-            <form method="post" action="${pageContext.request.contextPath}/identificationUserStag">
+            <form method="post" action="${pageContext.request.contextPath}/identificationUser">
             <br>
                 <div class="col-lg-4-Me">
                     <h5>Identifiant : </h5>

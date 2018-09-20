@@ -1,12 +1,14 @@
 <%-- Created by IntelliJ IDEA. --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+  <head class="header">
       <jsp:include page="/WEB-INF/head.jsp">
           <jsp:param name="title" value="QCM - Accueil" />
       </jsp:include>
   </head>
   <body>
+  <div class="col-lg-12">
+    <jsp:include page="/WEB-INF/headerNav.jsp" />
   <div class="col-lg-12">
     <jsp:include page="/WEB-INF/header.jsp">
       <jsp:param name="title" value="QCM - Accueil" />
@@ -17,11 +19,9 @@
         <p class="text">Accèdez à toutes les fonctionnalités qui vous sont autorisées en vous rendant sur votre page rubrique d'accès (animateur ou stagiaire)</p>
         <p class="text">Pour faire une recherche sur Google, utiliser le formulaire de recherche.</p>
       </div>
-      <div class="col-lg-2 bordure2">
-        <%@include file="menu.jsp"%>
-      </div>
     </div>
     <p class="eniecole">TP ENI Ecole</p>
+  </div>
   </div>
   </body>
 </html>
