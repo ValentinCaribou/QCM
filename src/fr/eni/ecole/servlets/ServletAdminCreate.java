@@ -28,10 +28,10 @@ public class ServletAdminCreate extends HttpServlet {
             String choixFormResp = request.getParameter("choixFormResp");
 
             if( nom == null || nom.equals("") ||
-                    prenom == null || prenom.equals("") ||
-                    email == null || email.equals("") ||
-                    password == null || password.equals("") ||
-                    choixFormResp == null )
+                prenom == null || prenom.equals("") ||
+                email == null || email.equals("") ||
+                password == null || password.equals("") ||
+                choixFormResp == null )
             {
                 request.setAttribute("warningInsert", "Tous les champs sont obligatoires");
                 this.doGet(request, response);
