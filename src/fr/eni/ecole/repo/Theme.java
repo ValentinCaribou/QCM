@@ -10,6 +10,10 @@ public class Theme {
         this.libelle = libelle;
     }
 
+    public Theme( String libelle) {
+        this.libelle = libelle;
+    }
+
     public int getId() {
         return id;
     }

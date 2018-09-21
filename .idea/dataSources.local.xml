@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="TPJavaEE_GestionFormations" uuid="4065068f-7aa0-4c98-bac7-2db5e5b8642e">
+    <data-source name="BDD_QCM" uuid="72339ec6-67ac-41e5-ad99-77a8105c16f4">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="MSSQL" exact-version="0.0" />
     </data-source>
   </component>

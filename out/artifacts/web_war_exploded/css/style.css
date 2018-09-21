@@ -1,5 +1,17 @@
+
+textarea.enonceQuestion{
+    resize:none;
+}
+
 li{
     list-style: none;
+}
+.menuFormateurLien{
+    text-decoration: none;
+}
+
+.creationThemeDivFormulaireCreation{
+    padding-top: 50px;
 }
 
 .bordure {
@@ -89,6 +101,7 @@ div {
 .label-strong label {
     font-weight: bold;
 }
+
 
 
 
